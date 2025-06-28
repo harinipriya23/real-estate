@@ -1,15 +1,19 @@
 import { Navbar } from "./Navbar";
 import buildingImg from "../assets/building/building4.avif";
+
 export const Hero = () => {
   return (
     <div className="min-h-svh w-full grid grid-cols-1 lg:grid-cols-2  p-4 lg:p-8 gap-4">
       <section className="bg-white dark:bg-black h-full col-span-1 grid grid-rows-3">
         <div className="flex justify-between row-span-1">
-          <img src="logo2.png" className="h-7 w-7 lg:h-10 lg:w-10" />
+          <img
+            src="logo2.png"
+            className="h-7 w-7 lg:h-10 lg:w-10 motion-scale-in-50 motion-duration-1500"
+          />
           <Navbar />
         </div>
         <div className=" row-span-1 text-center px-4 font-poppins">
-          <p className="text-sm motion-preset-slide-up-md motion-duration-1500">
+          <p className="text-[10px] motion-preset-slide-up-md motion-duration-1500">
             Building Your Dreams
           </p>
           <h1 className="flex flex-col items-center text-2xl sm:text-4xl lg:text-5xl font-extrabold motion-preset-slide-up-md motion-duration-1500">
@@ -19,8 +23,10 @@ export const Hero = () => {
             </span>
           </h1>
         </div>
-        <div className="row-span-1 flex justify-between items-end  ">
-          <button>Call us</button>
+        <div className="row-span-1 flex justify-between items-end font-inter ">
+          <button className="bg-black dark:bg-white w-24 py-1 px-2 text-white dark:text-black rounded-md">
+            Call us
+          </button>
           <button>Explore properties</button>
         </div>
       </section>

@@ -13,9 +13,11 @@ export const Navbar = () => {
   };
 
   return (
-    <div className="flex gap-2">
-      <CgMenuRight className="h-4 md:h-5 w-4 md:w-5" />
-      <button onClick={toggleTheme} className="h-4 md:h-5 w-4 md:w-5">
+    <div>
+      <button
+        onClick={toggleTheme}
+        className="h-4 md:h-5 w-4 md:w-5 motion-scale-in-50 motion-duration-1500"
+      >
         {theme === "light" ? <BsMoonStarsFill /> : <BsFillSunFill />}{" "}
       </button>
     </div>

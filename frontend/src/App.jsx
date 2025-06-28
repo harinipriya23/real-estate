@@ -4,18 +4,18 @@ import { Portfolio } from "./components/Portfolio";
 import { Experience } from "./components/Experience";
 import { Advantages } from "./components/Advantages";
 import { PropertyType } from "./components/PropertyType";
-import GeocodeA from "./api/GeocodeAddress";
+import PropertyApi from "./api/PropertyApi";
 
 function App() {
   return (
     <>
       <Hero />
-      <GeocodeA />
-      <Portfolio />
+      <PropertyApi />
+      {/* <Portfolio />
       <Experience />
       <Advantages />
       <PropertyType />
-      <FAQs />
+      <FAQs /> */}
     </>
   );
 }
