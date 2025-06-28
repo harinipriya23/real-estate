@@ -1,0 +1,10 @@
+{
+  "properties": [
+    {
+      "id": 1,
+      "title": "Sample Apartment",
+      "location": "Chennai",
+      "price": 5000000
+    }
+  ]
+}
