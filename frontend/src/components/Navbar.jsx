@@ -1,8 +1,5 @@
-import React from "react";
 import { useState } from "react";
-import { HiSun } from "react-icons/hi";
-import { CgMenuRight } from "react-icons/cg";
-import { BsFillSunFill } from "react-icons/bs";
+import { IoSunny } from "react-icons/io5";
 import { BsMoonStarsFill } from "react-icons/bs";
 
 export const Navbar = () => {
@@ -16,9 +13,13 @@ export const Navbar = () => {
     <div>
       <button
         onClick={toggleTheme}
-        className="h-4 md:h-5 w-4 md:w-5 motion-scale-in-50 motion-duration-1500"
+        className="motion-scale-in-50 motion-duration-1500"
       >
-        {theme === "light" ? <BsMoonStarsFill /> : <BsFillSunFill />}{" "}
+        {theme === "light" ? (
+          <BsMoonStarsFill size={25} />
+        ) : (
+          <IoSunny size={25} />
+        )}{" "}
       </button>
     </div>
   );
