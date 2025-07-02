@@ -13,7 +13,14 @@ export const ExploreProperty = () => {
           Explore our Properties
         </p>
       </div>
-      <div></div>
+      <div>
+        {properties.map((item) => (
+          <div className="flex">
+            <p>{item.type}</p>
+            <img src={item.image} />
+          </div>
+        ))}
+      </div>
     </section>
   );
 };

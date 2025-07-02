@@ -14,6 +14,7 @@ export const PropertyProvider = ({ children }) => {
     const url = "https://real-estate-4ama.onrender.com/properties";
     try {
       const response = await axios.get(url);
+      console.log(response.data);
       setProperties(response.data);
     } catch (error) {
       console.error("Something went wrong in fetching properties", error);
