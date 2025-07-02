@@ -1,0 +1,34 @@
+import React from "react";
+import axios from "axios";
+import { createContext, useState, useEffect } from "react";
+
+// create context
+export const PropertyContext = createContext();
+
+// create provider
+export const PropertyProvider = ({ children }) => {
+  const [properties, setProperties] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  const fetchProperties = async () => {
+    const url = "https://real-estate-4ama.onrender.com/properties";
+    try {
+      const response = await axios.get(url);
+      setProperties(response.data);
+    } catch (error) {
+      console.error("Something went wrong in fetching properties", error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    fetchProperties();
+  }, []);
+
+  return (
+    <PropertyContext.Provider value={{ properties, loading }}>
+      {children}
+    </PropertyContext.Provider>
+  );
+};

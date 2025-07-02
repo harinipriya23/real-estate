@@ -2,9 +2,1536 @@
   "properties": [
     {
       "id": 1,
-      "title": "Sample Apartment",
-      "location": "Chennai",
-      "price": 5000000
+      "propertyName": "Palm Grove Resort",
+      "type": "Resort",
+      "bhk": "3 BHK",
+      "address": "45 Beachside Avenue, ECR",
+      "street": "East Coast Road",
+      "location": "Chennai, Tamil Nadu",
+      "image": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80",
+      "description": "A peaceful 3 BHK beachside resort perfect for weekend getaways. Managed by the owner with care, it's located in a serene environment with coconut trees and sea breeze.",
+      "price": "1.5 Cr",
+      "status": "Available",
+      "owner": {
+        "name": "Mr. Raman",
+        "contact": "9876543210"
+      },
+      "facing": "East",
+      "totalFloors": 1,
+      "nearby": [
+        "Beach",
+        "Resort Park",
+        "Fishing Market"
+      ],
+      "amenities": [
+        "Swimming Pool",
+        "Private Beach",
+        "Garden",
+        "Open Kitchen"
+      ]
+    },
+    {
+      "id": 2,
+      "propertyName": "Skyline Residency",
+      "type": "Apartment",
+      "bhk": "2 BHK",
+      "address": "12 MG Road, Shivaji Nagar",
+      "street": "MG Road",
+      "location": "Bangalore, Karnataka",
+      "image": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80",
+      "description": "Modern 2 BHK apartment in the heart of Bangalore. Ideal for working professionals and small families, close to IT hubs and shopping streets.",
+      "price": "85 L",
+      "status": "Sold",
+      "owner": {
+        "name": "Mrs. Anitha",
+        "contact": "9088776655"
+      },
+      "facing": "North",
+      "totalFloors": 8,
+      "nearby": [
+        "Metro Station",
+        "IT Park",
+        "Shopping Mall"
+      ],
+      "amenities": [
+        "Elevator",
+        "Power Backup",
+        "Parking",
+        "Security"
+      ]
+    },
+    {
+      "id": 3,
+      "propertyName": "Green Nest Villa",
+      "type": "Villa",
+      "bhk": "4 BHK",
+      "address": "208 Lake View Road, Whitefield",
+      "street": "Lake View Road",
+      "location": "Bangalore, Karnataka",
+      "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+      "description": "Spacious 4 BHK luxury villa with landscaped garden. Owner-maintained and ready to move in. Quiet gated community ideal for families.",
+      "price": "2.3 Cr",
+      "status": "Available",
+      "owner": {
+        "name": "Mr. Kishore",
+        "contact": "9999911111"
+      },
+      "facing": "South",
+      "totalFloors": 2,
+      "nearby": [
+        "International School",
+        "Forum Mall",
+        "IT Corridor"
+      ],
+      "amenities": [
+        "Private Garden",
+        "Terrace",
+        "Modular Kitchen",
+        "Servant Room"
+      ]
+    },
+    {
+      "id": 4,
+      "propertyName": "Sunset Studios",
+      "type": "Studio Apartment",
+      "bhk": "1 RK",
+      "address": "301 Carter Road",
+      "street": "Carter Road",
+      "location": "Mumbai, Maharashtra",
+      "image": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80",
+      "description": "Compact and trendy studio apartment overlooking the sea. Ideal for singles or investment property. Fully furnished with aesthetic interiors.",
+      "price": "65 L",
+      "status": "Rented",
+      "owner": {
+        "name": "Mr. Dinesh",
+        "contact": "8877665544"
+      },
+      "facing": "West",
+      "totalFloors": 5,
+      "nearby": [
+        "Joggers Park",
+        "Sea Walk",
+        "Cafe Chains"
+      ],
+      "amenities": [
+        "Sea View",
+        "Furnished",
+        "Air Conditioning",
+        "WiFi"
+      ]
+    },
+    {
+      "id": 5,
+      "propertyName": "Royal Heritage Haveli",
+      "type": "Heritage Home",
+      "bhk": "5 BHK",
+      "address": "58 Amer Road",
+      "street": "Amer Road",
+      "location": "Jaipur, Rajasthan",
+      "image": "https://images.unsplash.com/photo-1567016549569-d1fc7f0f6b77?auto=format&fit=crop&w=800&q=80",
+      "description": "A majestic 5 BHK haveli with antique interiors and Rajasthani architecture. Owned and maintained by the royal lineage. Available for sale or boutique hotel setup.",
+      "price": "5 Cr",
+      "status": "Under Construction",
+      "owner": {
+        "name": "Rajendra Singh",
+        "contact": "9822223344"
+      },
+      "facing": "North-East",
+      "totalFloors": 3,
+      "nearby": [
+        "Amber Fort",
+        "City Palace",
+        "Tourist Bazaar"
+      ],
+      "amenities": [
+        "Antique Furniture",
+        "Courtyard",
+        "Terrace Garden",
+        "Temple Room"
+      ]
+    },
+    {
+      "id": 6,
+      "propertyName": "Ocean Pearl Retreat",
+      "type": "Resort",
+      "bhk": "3 BHK",
+      "address": "435 East Coast Road",
+      "street": "East Coast Road",
+      "location": "Chennai, Tamil Nadu",
+      "image": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80",
+      "description": "A peaceful retreat perfect for weekend getaways. Close to the beach with modern amenities.",
+      "price": "1.20 Cr",
+      "areaSqFt": 3200,
+      "status": "Available",
+      "owner": {
+        "name": "Srinivas R.",
+        "contact": "9876532190"
+      },
+      "facing": "East",
+      "totalFloors": 1,
+      "nearby": [
+        "ECR Beach",
+        "Mahabalipuram",
+        "Water Sports Club"
+      ],
+      "amenities": [
+        "Swimming Pool",
+        "Garden",
+        "WiFi",
+        "Terrace"
+      ]
+    },
+    {
+      "id": 7,
+      "propertyName": "TechHub Heights",
+      "type": "Apartment",
+      "bhk": "2 BHK",
+      "address": "89 MG Road",
+      "street": "MG Road",
+      "location": "Bangalore, Karnataka",
+      "image": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80",
+      "description": "Modern 2BHK apartment near tech parks and metro. Great for working professionals.",
+      "price": "88 L",
+      "areaSqFt": 1100,
+      "status": "Rented",
+      "owner": {
+        "name": "Ananya Iyer",
+        "contact": "9988776655"
+      },
+      "facing": "North-East",
+      "totalFloors": 10,
+      "nearby": [
+        "Metro Station",
+        "Shopping Mall",
+        "Tech Park"
+      ],
+      "amenities": [
+        "Parking",
+        "Power Backup",
+        "Security",
+        "Gym"
+      ]
+    },
+    {
+      "id": 8,
+      "propertyName": "Serene Grove Villa",
+      "type": "Villa",
+      "bhk": "4 BHK",
+      "address": "212 Banjara Hills",
+      "street": "Banjara Hills",
+      "location": "Hyderabad, Telangana",
+      "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+      "description": "Spacious villa with lush garden and spacious rooms. Great for large families.",
+      "price": "2.05 Cr",
+      "areaSqFt": 3500,
+      "status": "Available",
+      "owner": {
+        "name": "Rajiv Nanda",
+        "contact": "9123456780"
+      },
+      "facing": "South-West",
+      "totalFloors": 2,
+      "nearby": [
+        "City Center",
+        "Hospitals",
+        "International School"
+      ],
+      "amenities": [
+        "Private Garden",
+        "Modular Kitchen",
+        "Servant Room",
+        "Terrace"
+      ]
+    },
+    {
+      "id": 9,
+      "propertyName": "SeaView Studio",
+      "type": "Studio Apartment",
+      "bhk": "1 RK",
+      "address": "74 Carter Road",
+      "street": "Carter Road",
+      "location": "Mumbai, Maharashtra",
+      "image": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80",
+      "description": "Cozy studio with sea view. Ideal for singles or investment buyers.",
+      "price": "62.3 L",
+      "areaSqFt": 580,
+      "status": "Sold",
+      "owner": {
+        "name": "Sneha Rao",
+        "contact": "9876075432"
+      },
+      "facing": "West",
+      "totalFloors": 6,
+      "nearby": [
+        "Juhu Beach",
+        "Joggers Park",
+        "PVR Cinema"
+      ],
+      "amenities": [
+        "Furnished",
+        "WiFi",
+        "AC",
+        "Balcony"
+      ]
+    },
+    {
+      "id": 10,
+      "propertyName": "Raj Mahal Heritage",
+      "type": "Heritage Home",
+      "bhk": "5 BHK",
+      "address": "91 Amer Road",
+      "street": "Amer Road",
+      "location": "Jaipur, Rajasthan",
+      "image": "https://images.unsplash.com/photo-1567016549569-d1fc7f0f6b77?auto=format&fit=crop&w=800&q=80",
+      "description": "Traditional haveli with antique charm. Suitable for boutique hotel setup.",
+      "price": "2.80 Cr",
+      "areaSqFt": 4000,
+      "status": "Available",
+      "owner": {
+        "name": "Rajesh Singh",
+        "contact": "7001234567"
+      },
+      "facing": "North",
+      "totalFloors": 3,
+      "nearby": [
+        "Amber Fort",
+        "Jal Mahal",
+        "City Palace"
+      ],
+      "amenities": [
+        "Courtyard",
+        "Terrace Garden",
+        "Temple Room",
+        "Antique Furniture"
+      ]
+    },
+    {
+      "id": 11,
+      "propertyName": "Backwater Breeze Rowhouse",
+      "type": "Row House",
+      "bhk": "3 BHK",
+      "address": "210 Marine Drive",
+      "street": "Marine Drive",
+      "location": "Kochi, Kerala",
+      "image": "https://images.unsplash.com/photo-1502673530728-f79b4cab31b1?auto=format&fit=crop&w=800&q=80",
+      "description": "Row house in peaceful gated colony with backwater view.",
+      "price": "1.10 Cr",
+      "areaSqFt": 2200,
+      "status": "Available",
+      "owner": {
+        "name": "Maya Joseph",
+        "contact": "9090908080"
+      },
+      "facing": "East",
+      "totalFloors": 2,
+      "nearby": [
+        "Marine Walkway",
+        "Lulu Mall",
+        "St. Francis Church"
+      ],
+      "amenities": [
+        "Garden",
+        "Power Backup",
+        "Security",
+        "Clubhouse"
+      ]
+    },
+    {
+      "id": 12,
+      "propertyName": "Skyline Crown Penthouse",
+      "type": "Penthouse",
+      "bhk": "4 BHK",
+      "address": "330 Salt Lake",
+      "street": "Salt Lake",
+      "location": "Kolkata, West Bengal",
+      "image": "https://images.unsplash.com/photo-1588854337236-daa08b4f8a04?auto=format&fit=crop&w=800&q=80",
+      "description": "Top-floor penthouse with skyline view and huge balcony.",
+      "price": "1.90 Cr",
+      "areaSqFt": 2750,
+      "status": "Rented",
+      "owner": {
+        "name": "Arnab Das",
+        "contact": "9911773366"
+      },
+      "facing": "North-East",
+      "totalFloors": 12,
+      "nearby": [
+        "City Centre Mall",
+        "Eco Park",
+        "Salt Lake Stadium"
+      ],
+      "amenities": [
+        "Terrace",
+        "Parking",
+        "Security",
+        "WiFi"
+      ]
+    },
+    {
+      "id": 13,
+      "propertyName": "Zenith Duplex",
+      "type": "Duplex",
+      "bhk": "3 BHK",
+      "address": "640 Koregaon Park",
+      "street": "Koregaon Park",
+      "location": "Pune, Maharashtra",
+      "image": "https://images.unsplash.com/photo-1627404489920-3035d104a2e5?auto=format&fit=crop&w=800&q=80",
+      "description": "Elegant duplex with stylish interiors and good locality.",
+      "price": "1.30 Cr",
+      "areaSqFt": 2000,
+      "status": "Available",
+      "owner": {
+        "name": "Aditya Mehta",
+        "contact": "8888445566"
+      },
+      "facing": "South-East",
+      "totalFloors": 2,
+      "nearby": [
+        "Osho Garden",
+        "Phoenix MarketCity",
+        "Airport"
+      ],
+      "amenities": [
+        "Modular Kitchen",
+        "Play Area",
+        "Gym",
+        "Terrace"
+      ]
+    },
+    {
+      "id": 14,
+      "propertyName": "Green Acres Farmhouse",
+      "type": "Farmhouse",
+      "bhk": "4 BHK",
+      "address": "470 Satellite",
+      "street": "Satellite",
+      "location": "Ahmedabad, Gujarat",
+      "image": "https://images.unsplash.com/photo-1580587771838-bd6f6e03c47b?auto=format&fit=crop&w=800&q=80",
+      "description": "Farmhouse with open green space and peaceful surroundings.",
+      "price": "2.10 Cr",
+      "areaSqFt": 3900,
+      "status": "Available",
+      "owner": {
+        "name": "Dharmesh Patel",
+        "contact": "7007001234"
+      },
+      "facing": "West",
+      "totalFloors": 1,
+      "nearby": [
+        "ISCON Temple",
+        "SG Highway",
+        "Science City"
+      ],
+      "amenities": [
+        "Swimming Pool",
+        "Garden",
+        "Servant Room",
+        "WiFi"
+      ]
+    },
+    {
+      "id": 15,
+      "propertyName": "DreamPlot Dwarka",
+      "type": "Plot",
+      "bhk": "NA",
+      "address": "150 Dwarka",
+      "street": "Dwarka",
+      "location": "Delhi, Delhi",
+      "image": "https://images.unsplash.com/photo-1600585153962-01c3f5f9fba3?auto=format&fit=crop&w=800&q=80",
+      "description": "Residential plot in prime location, ready for construction.",
+      "price": "95.7 L",
+      "areaSqFt": 1800,
+      "status": "Available",
+      "owner": {
+        "name": "Kiran Bhatia",
+        "contact": "8765432109"
+      },
+      "facing": "East",
+      "totalFloors": 0,
+      "nearby": [
+        "Dwarka Metro",
+        "Schools",
+        "Markets"
+      ],
+      "amenities": [
+        "Gated Entry",
+        "Wide Roads",
+        "Drainage",
+        "Park Nearby"
+      ]
+    },
+    {
+      "id": 16,
+      "propertyName": "Tranquil Woods Resort",
+      "type": "Resort",
+      "bhk": "3 BHK",
+      "address": "288 Whitefield",
+      "street": "Whitefield",
+      "location": "Bangalore, Karnataka",
+      "image": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80",
+      "description": "Peaceful gated resort with gardens and amenities, perfect for weekend staycations.",
+      "price": "1.10 Cr",
+      "areaSqFt": 3000,
+      "status": "Available",
+      "owner": {
+        "name": "Lakshmi Murthy",
+        "contact": "9898999988"
+      },
+      "facing": "North",
+      "totalFloors": 1,
+      "nearby": [
+        "ITPL Tech Park",
+        "Phoenix Marketcity",
+        "Whitefield Metro"
+      ],
+      "amenities": [
+        "Swimming Pool",
+        "WiFi",
+        "Security",
+        "Garden"
+      ]
+    },
+    {
+      "id": 17,
+      "propertyName": "Metro Edge Apartment",
+      "type": "Apartment",
+      "bhk": "2 BHK",
+      "address": "443 Andheri East",
+      "street": "Andheri East",
+      "location": "Mumbai, Maharashtra",
+      "image": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80",
+      "description": "Well-connected 2BHK with nearby metro access and 24/7 security.",
+      "price": "91 L",
+      "areaSqFt": 980,
+      "status": "Rented",
+      "owner": {
+        "name": "Nikita Shah",
+        "contact": "9123451123"
+      },
+      "facing": "East",
+      "totalFloors": 8,
+      "nearby": [
+        "Andheri Metro",
+        "T2 Airport",
+        "Marol Naka"
+      ],
+      "amenities": [
+        "Power Backup",
+        "Elevator",
+        "Parking",
+        "Security"
+      ]
+    },
+    {
+      "id": 18,
+      "propertyName": "Hilltop Crest Villa",
+      "type": "Villa",
+      "bhk": "4 BHK",
+      "address": "752 Jubilee Hills",
+      "street": "Jubilee Hills",
+      "location": "Hyderabad, Telangana",
+      "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+      "description": "Spacious independent villa with modern interiors and lush lawn.",
+      "price": "2.45 Cr",
+      "areaSqFt": 4100,
+      "status": "Available",
+      "owner": {
+        "name": "Syed Zafar",
+        "contact": "9876543210"
+      },
+      "facing": "West",
+      "totalFloors": 2,
+      "nearby": [
+        "Film Nagar",
+        "Apollo Hospital",
+        "Lotus Pond"
+      ],
+      "amenities": [
+        "Servant Room",
+        "Garden",
+        "Clubhouse",
+        "Terrace"
+      ]
+    },
+    {
+      "id": 19,
+      "propertyName": "Urban Nest Studio",
+      "type": "Studio Apartment",
+      "bhk": "1 RK",
+      "address": "311 Anna Nagar",
+      "street": "Anna Nagar",
+      "location": "Chennai, Tamil Nadu",
+      "image": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80",
+      "description": "Compact and modern studio apartment in a prime neighborhood.",
+      "price": "58 L",
+      "areaSqFt": 560,
+      "status": "Sold",
+      "owner": {
+        "name": "Harini V.",
+        "contact": "9090907070"
+      },
+      "facing": "North-East",
+      "totalFloors": 5,
+      "nearby": [
+        "Tower Park",
+        "Anna Arch",
+        "VR Mall"
+      ],
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Furnished",
+        "Security"
+      ]
+    },
+    {
+      "id": 20,
+      "propertyName": "Rani Mahal Heritage",
+      "type": "Heritage Home",
+      "bhk": "5 BHK",
+      "address": "645 Johari Bazaar",
+      "street": "Johari Bazaar",
+      "location": "Jaipur, Rajasthan",
+      "image": "https://images.unsplash.com/photo-1567016549569-d1fc7f0f6b77?auto=format&fit=crop&w=800&q=80",
+      "description": "Spacious 5BHK haveli-style home with antique wooden work and cultural charm.",
+      "price": "3.20 Cr",
+      "areaSqFt": 4500,
+      "status": "Available",
+      "owner": {
+        "name": "Rajendra Yadav",
+        "contact": "7008006001"
+      },
+      "facing": "South",
+      "totalFloors": 2,
+      "nearby": [
+        "Hawa Mahal",
+        "City Palace",
+        "Tripolia Bazaar"
+      ],
+      "amenities": [
+        "Courtyard",
+        "Terrace Garden",
+        "Private Well",
+        "Antique Fixtures"
+      ]
+    },
+    {
+      "id": 21,
+      "propertyName": "Backwater Greens Rowhouse",
+      "type": "Row House",
+      "bhk": "3 BHK",
+      "address": "509 Elamkulam",
+      "street": "Elamkulam",
+      "location": "Kochi, Kerala",
+      "image": "https://images.unsplash.com/photo-1502673530728-f79b4cab31b1?auto=format&fit=crop&w=800&q=80",
+      "description": "Modern row house with parking space and green backyard.",
+      "price": "1.35 Cr",
+      "areaSqFt": 2400,
+      "status": "Available",
+      "owner": {
+        "name": "Dinesh Menon",
+        "contact": "9011122233"
+      },
+      "facing": "West",
+      "totalFloors": 2,
+      "nearby": [
+        "Kadavanthra Metro",
+        "Gold Souk Mall",
+        "Subhash Park"
+      ],
+      "amenities": [
+        "Parking",
+        "WiFi",
+        "Power Backup",
+        "Clubhouse"
+      ]
+    },
+    {
+      "id": 22,
+      "propertyName": "Sky Ridge Penthouse",
+      "type": "Penthouse",
+      "bhk": "3 BHK",
+      "address": "893 EM Bypass",
+      "street": "EM Bypass",
+      "location": "Kolkata, West Bengal",
+      "image": "https://images.unsplash.com/photo-1588854337236-daa08b4f8a04?auto=format&fit=crop&w=800&q=80",
+      "description": "High-rise penthouse with stunning views and premium furnishing.",
+      "price": "2.10 Cr",
+      "areaSqFt": 3200,
+      "status": "Available",
+      "owner": {
+        "name": "Rohit Sen",
+        "contact": "9333445566"
+      },
+      "facing": "South-East",
+      "totalFloors": 15,
+      "nearby": [
+        "Acropolis Mall",
+        "Science City",
+        "Ruby Hospital"
+      ],
+      "amenities": [
+        "Terrace",
+        "Lift",
+        "Private Pool",
+        "Power Backup"
+      ]
+    },
+    {
+      "id": 23,
+      "propertyName": "Verde Duplex Residences",
+      "type": "Duplex",
+      "bhk": "3 BHK",
+      "address": "276 Aundh",
+      "street": "Aundh",
+      "location": "Pune, Maharashtra",
+      "image": "https://images.unsplash.com/photo-1627404489920-3035d104a2e5?auto=format&fit=crop&w=800&q=80",
+      "description": "Stylish duplex apartment with large windows and ample light.",
+      "price": "1.55 Cr",
+      "areaSqFt": 2300,
+      "status": "Available",
+      "owner": {
+        "name": "Vikas Kale",
+        "contact": "9944003322"
+      },
+      "facing": "North-West",
+      "totalFloors": 2,
+      "nearby": [
+        "Seasons Mall",
+        "Westend Mall",
+        "Hinjewadi IT Park"
+      ],
+      "amenities": [
+        "Modular Kitchen",
+        "Gym",
+        "Clubhouse",
+        "Security"
+      ]
+    },
+    {
+      "id": 24,
+      "propertyName": "Shilaj Serenity Farmhouse",
+      "type": "Farmhouse",
+      "bhk": "4 BHK",
+      "address": "384 Shilaj",
+      "street": "Shilaj",
+      "location": "Ahmedabad, Gujarat",
+      "image": "https://images.unsplash.com/photo-1580587771838-bd6f6e03c47b?auto=format&fit=crop&w=800&q=80",
+      "description": "Farmhouse with swimming pool and backyard farm area.",
+      "price": "2.65 Cr",
+      "areaSqFt": 4100,
+      "status": "Under Construction",
+      "owner": {
+        "name": "Dhaval Joshi",
+        "contact": "7788996600"
+      },
+      "facing": "East",
+      "totalFloors": 1,
+      "nearby": [
+        "Thaltej Circle",
+        "SG Highway",
+        "Iskcon Temple"
+      ],
+      "amenities": [
+        "Swimming Pool",
+        "Farm Land",
+        "Parking",
+        "WiFi"
+      ]
+    },
+    {
+      "id": 25,
+      "propertyName": "Uttam Prime Plot",
+      "type": "Plot",
+      "bhk": "NA",
+      "address": "147 Uttam Nagar",
+      "street": "Uttam Nagar",
+      "location": "Delhi, Delhi",
+      "image": "https://images.unsplash.com/photo-1600585153962-01c3f5f9fba3?auto=format&fit=crop&w=800&q=80",
+      "description": "Clear title plot ready for independent house construction.",
+      "price": "83 L",
+      "areaSqFt": 1600,
+      "status": "Available",
+      "owner": {
+        "name": "Aarti Mehra",
+        "contact": "9898089898"
+      },
+      "facing": "North",
+      "totalFloors": 0,
+      "nearby": [
+        "Dwarka Mor Metro",
+        "Grocery Market",
+        "School Zone"
+      ],
+      "amenities": [
+        "Gated Entry",
+        "Electricity",
+        "Drainage",
+        "Wide Roads"
+      ]
+    },
+    {
+      "id": 26,
+      "propertyName": "Ocean Breeze Resort",
+      "type": "Resort",
+      "bhk": "3 BHK",
+      "address": "321 ECR Road",
+      "street": "ECR Road",
+      "location": "Puducherry, Tamil Nadu",
+      "image": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80",
+      "description": "Luxurious beach resort home with scenic views and private garden.",
+      "price": "1.80 Cr",
+      "areaSqFt": 3300,
+      "amenities": [
+        "Beach Access",
+        "Swimming Pool",
+        "Terrace",
+        "Security"
+      ],
+      "status": "Available",
+      "owner": {
+        "name": "Mr. Ramesh Narayanan",
+        "contact": "+91 9876543101"
+      },
+      "facing": "East",
+      "totalFloors": 2,
+      "nearbyLandmarks": [
+        "Serenity Beach",
+        "Auroville",
+        "ECR Toll"
+      ]
+    },
+    {
+      "id": 27,
+      "propertyName": "MetroView Residency",
+      "type": "Apartment",
+      "bhk": "3 BHK",
+      "address": "58 Sector 62",
+      "street": "Sector 62",
+      "location": "Noida, Uttar Pradesh",
+      "image": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80",
+      "description": "Spacious 3BHK apartment in tech hub locality near Metro Station.",
+      "price": "1.20 Cr",
+      "areaSqFt": 1800,
+      "amenities": [
+        "Power Backup",
+        "Gym",
+        "Security",
+        "Clubhouse"
+      ],
+      "status": "Rented",
+      "owner": {
+        "name": "Ms. Anita Sharma",
+        "contact": "+91 9876543102"
+      },
+      "facing": "North",
+      "totalFloors": 12,
+      "nearbyLandmarks": [
+        "Sector 62 Metro",
+        "Jaypee Institute",
+        "City Centre Mall"
+      ]
+    },
+    {
+      "id": 28,
+      "propertyName": "Lakeview Grand Villa",
+      "type": "Villa",
+      "bhk": "4 BHK",
+      "address": "18 Gandipet",
+      "street": "Gandipet",
+      "location": "Hyderabad, Telangana",
+      "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+      "description": "Gated villa community with clubhouse and lake-side garden.",
+      "price": "2.90 Cr",
+      "areaSqFt": 4200,
+      "amenities": [
+        "Garden",
+        "Clubhouse",
+        "Terrace",
+        "Private Parking"
+      ],
+      "status": "Available",
+      "owner": {
+        "name": "Mr. Harsha Vardhan",
+        "contact": "+91 9876543103"
+      },
+      "facing": "South",
+      "totalFloors": 2,
+      "nearbyLandmarks": [
+        "Gandipet Lake",
+        "CBIT College",
+        "Ocean Park"
+      ]
+    },
+    {
+      "id": 29,
+      "propertyName": "Urban Nest Studio",
+      "type": "Studio Apartment",
+      "bhk": "1 RK",
+      "address": "113 Koramangala",
+      "street": "Koramangala",
+      "location": "Bangalore, Karnataka",
+      "image": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80",
+      "description": "Compact studio perfect for students or single professionals.",
+      "price": "54.5 L",
+      "areaSqFt": 480,
+      "amenities": [
+        "WiFi",
+        "Furnished",
+        "Balcony",
+        "Security"
+      ],
+      "status": "Rented",
+      "owner": {
+        "name": "Mr. Vinay Kulkarni",
+        "contact": "+91 9876543104"
+      },
+      "facing": "West",
+      "totalFloors": 6,
+      "nearbyLandmarks": [
+        "Forum Mall",
+        "St. John's Hospital",
+        "Sony Signal"
+      ]
+    },
+    {
+      "id": 30,
+      "propertyName": "Royal Haveli Mansion",
+      "type": "Heritage Home",
+      "bhk": "6 BHK",
+      "address": "225 City Palace Road",
+      "street": "City Palace Road",
+      "location": "Udaipur, Rajasthan",
+      "image": "https://images.unsplash.com/photo-1567016549569-d1fc7f0f6b77?auto=format&fit=crop&w=800&q=80",
+      "description": "Rajasthan-style home with arches, jharokhas, and courtyards.",
+      "price": "3.75 Cr",
+      "areaSqFt": 5000,
+      "amenities": [
+        "Courtyard",
+        "Temple Room",
+        "Terrace",
+        "Private Garden"
+      ],
+      "status": "Sold",
+      "owner": {
+        "name": "Mrs. Sunita Singh",
+        "contact": "+91 9876543105"
+      },
+      "facing": "East",
+      "totalFloors": 2,
+      "nearbyLandmarks": [
+        "City Palace",
+        "Pichola Lake",
+        "Jagdish Temple"
+      ]
+    },
+    {
+      "id": 31,
+      "propertyName": "Green Grove Row House",
+      "type": "Row House",
+      "bhk": "3 BHK",
+      "address": "502 Peelamedu",
+      "street": "Peelamedu",
+      "location": "Coimbatore, Tamil Nadu",
+      "image": "https://images.unsplash.com/photo-1502673530728-f79b4cab31b1?auto=format&fit=crop&w=800&q=80",
+      "description": "Row house in a serene colony with own backyard garden.",
+      "price": "98.0 L",
+      "areaSqFt": 2100,
+      "amenities": [
+        "Parking",
+        "Power Backup",
+        "Clubhouse",
+        "Security"
+      ],
+      "status": "Available",
+      "owner": {
+        "name": "Mr. Karthik Raj",
+        "contact": "+91 9876543106"
+      },
+      "facing": "North-East",
+      "totalFloors": 1,
+      "nearbyLandmarks": [
+        "PSG College",
+        "Airport Road",
+        "Brookefields Mall"
+      ]
+    },
+    {
+      "id": 32,
+      "propertyName": "Skyline Crown Penthouse",
+      "type": "Penthouse",
+      "bhk": "4 BHK",
+      "address": "801 Ballygunge",
+      "street": "Ballygunge",
+      "location": "Kolkata, West Bengal",
+      "image": "https://images.unsplash.com/photo-1588854337236-daa08b4f8a04?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium top-floor penthouse with roof access and panoramic views.",
+      "price": "2.45 Cr",
+      "areaSqFt": 3600,
+      "amenities": [
+        "Terrace",
+        "Lift",
+        "Gym",
+        "Private Pool"
+      ],
+      "status": "Available",
+      "owner": {
+        "name": "Mrs. Priya Dutta",
+        "contact": "+91 9876543107"
+      },
+      "facing": "South-West",
+      "totalFloors": 8,
+      "nearbyLandmarks": [
+        "South City Mall",
+        "Birla Mandir",
+        "Park Circus"
+      ]
+    },
+    {
+      "id": 33,
+      "propertyName": "Vista Luxe Duplex",
+      "type": "Duplex",
+      "bhk": "3 BHK",
+      "address": "166 Baner",
+      "street": "Baner",
+      "location": "Pune, Maharashtra",
+      "image": "https://images.unsplash.com/photo-1627404489920-3035d104a2e5?auto=format&fit=crop&w=800&q=80",
+      "description": "Modern duplex with floor-to-ceiling windows and two balconies.",
+      "price": "1.40 Cr",
+      "areaSqFt": 2200,
+      "amenities": [
+        "Modular Kitchen",
+        "Terrace",
+        "Clubhouse",
+        "WiFi"
+      ],
+      "status": "Under Construction",
+      "owner": {
+        "name": "Mr. Suresh Patil",
+        "contact": "+91 9876543108"
+      },
+      "facing": "North-West",
+      "totalFloors": 2,
+      "nearbyLandmarks": [
+        "Balewadi High Street",
+        "Xion Mall",
+        "Baner Road"
+      ]
+    },
+    {
+      "id": 34,
+      "propertyName": "Santej Serenity Farmhouse",
+      "type": "Farmhouse",
+      "bhk": "4 BHK",
+      "address": "298 Santej",
+      "street": "Santej",
+      "location": "Ahmedabad, Gujarat",
+      "image": "https://images.unsplash.com/photo-1580587771838-bd6f6e03c47b?auto=format&fit=crop&w=800&q=80",
+      "description": "Eco-farmhouse with drip irrigation, fruit trees, and peaceful vibe.",
+      "price": "2.85 Cr",
+      "areaSqFt": 4600,
+      "amenities": [
+        "Farm Land",
+        "Swimming Pool",
+        "Servant Room",
+        "Garden"
+      ],
+      "status": "Available",
+      "owner": {
+        "name": "Mr. Jignesh Shah",
+        "contact": "+91 9876543109"
+      },
+      "facing": "West",
+      "totalFloors": 1,
+      "nearbyLandmarks": [
+        "Santej Lake",
+        "Kalhaar Club",
+        "SG Highway"
+      ]
+    },
+    {
+      "id": 35,
+      "propertyName": "Patparganj Prime Plot",
+      "type": "Plot",
+      "bhk": "NA",
+      "address": "415 Patparganj",
+      "street": "Patparganj",
+      "location": "Delhi, Delhi",
+      "image": "https://images.unsplash.com/photo-1600585153962-01c3f5f9fba3?auto=format&fit=crop&w=800&q=80",
+      "description": "Well-connected plot with clean legal title and wide approach road.",
+      "price": "1.05 Cr",
+      "areaSqFt": 1900,
+      "amenities": [
+        "Wide Roads",
+        "Electricity",
+        "Drainage",
+        "Park Nearby"
+      ],
+      "status": "Available",
+      "owner": {
+        "name": "Mr. Rakesh Mehra",
+        "contact": "+91 9876543110"
+      },
+      "facing": "East",
+      "totalFloors": 0,
+      "nearbyLandmarks": [
+        "Patparganj Metro",
+        "Max Hospital",
+        "Anand Vihar ISBT"
+      ]
+    },
+    {
+      "id": 36,
+      "propertyName": "Azure Shores Resort",
+      "type": "Resort",
+      "bhk": "4 BHK",
+      "address": "91 Kovalam Road",
+      "street": "Kovalam Road",
+      "location": "Chennai, Tamil Nadu",
+      "image": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80",
+      "description": "Luxurious beachside resort property with private lawn and outdoor seating.",
+      "price": "2.40 Cr",
+      "areaSqFt": 3800,
+      "amenities": [
+        "Swimming Pool",
+        "Terrace",
+        "Security",
+        "Sea View"
+      ],
+      "status": "Available",
+      "owner": {
+        "name": "Mr. Rajan Iyer",
+        "contact": "9876543210"
+      },
+      "facing": "East",
+      "totalFloors": 2,
+      "nearbyLandmarks": [
+        "Kovalam Beach",
+        "Radisson Blu Temple Bay"
+      ]
+    },
+    {
+      "id": 37,
+      "propertyName": "Skyline Haven",
+      "type": "Apartment",
+      "bhk": "2 BHK",
+      "address": "177 Viman Nagar",
+      "street": "Viman Nagar",
+      "location": "Pune, Maharashtra",
+      "image": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80",
+      "description": "Bright and breezy apartment ideal for small families or working couples.",
+      "price": "84.5 L",
+      "areaSqFt": 1040,
+      "amenities": [
+        "Power Backup",
+        "Security",
+        "Parking",
+        "Elevator"
+      ],
+      "status": "Rented",
+      "owner": {
+        "name": "Ms. Aarti Deshmukh",
+        "contact": "9832123456"
+      },
+      "facing": "North-East",
+      "totalFloors": 8,
+      "nearbyLandmarks": [
+        "Phoenix Marketcity",
+        "Symbiosis University"
+      ]
+    },
+    {
+      "id": 38,
+      "propertyName": "Royal Orchid Villa",
+      "type": "Villa",
+      "bhk": "5 BHK",
+      "address": "18 Alwarpet",
+      "street": "Alwarpet",
+      "location": "Chennai, Tamil Nadu",
+      "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+      "description": "Elegant villa in prime locality with modern architecture and premium finishes.",
+      "price": "3.90 Cr",
+      "areaSqFt": 5000,
+      "amenities": [
+        "Private Garden",
+        "Servant Quarters",
+        "Gym",
+        "Parking"
+      ],
+      "status": "Available",
+      "owner": {
+        "name": "Mr. Karthik Srinivasan",
+        "contact": "9845098765"
+      },
+      "facing": "South",
+      "totalFloors": 3,
+      "nearbyLandmarks": [
+        "Boat Club Road",
+        "St. John's School"
+      ]
+    },
+    {
+      "id": 39,
+      "propertyName": "TechNest Studio",
+      "type": "Studio Apartment",
+      "bhk": "1 RK",
+      "address": "331 Hinjawadi",
+      "street": "Hinjawadi",
+      "location": "Pune, Maharashtra",
+      "image": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80",
+      "description": "Studio apartment ideal for bachelors near IT hub with good ROI.",
+      "price": "61 L",
+      "areaSqFt": 610,
+      "amenities": [
+        "WiFi",
+        "Furnished",
+        "Security",
+        "Lift"
+      ],
+      "status": "Sold",
+      "owner": {
+        "name": "Mr. Amit Rathi",
+        "contact": "9123456789"
+      },
+      "facing": "West",
+      "totalFloors": 5,
+      "nearbyLandmarks": [
+        "Infosys Campus",
+        "Xion Mall"
+      ]
+    },
+    {
+      "id": 40,
+      "propertyName": "Nizam's Heritage",
+      "type": "Heritage Home",
+      "bhk": "4 BHK",
+      "address": "12 Chowmahalla Road",
+      "street": "Chowmahalla Road",
+      "location": "Hyderabad, Telangana",
+      "image": "https://images.unsplash.com/photo-1567016549569-d1fc7f0f6b77?auto=format&fit=crop&w=800&q=80",
+      "description": "Old-style haveli with restored woodwork and mosaic flooring.",
+      "price": "3.10 Cr",
+      "areaSqFt": 4200,
+      "amenities": [
+        "Courtyard",
+        "Terrace Garden",
+        "Antique Fixtures",
+        "Spacious Veranda"
+      ],
+      "status": "Available",
+      "owner": {
+        "name": "Mrs. Farzana Begum",
+        "contact": "9001234567"
+      },
+      "facing": "North",
+      "totalFloors": 2,
+      "nearbyLandmarks": [
+        "Chowmahalla Palace",
+        "Charminar"
+      ]
+    },
+    {
+      "id": 41,
+      "propertyName": "Urban Nest Row",
+      "type": "Row House",
+      "bhk": "3 BHK",
+      "address": "124 Sector 40",
+      "street": "Sector 40",
+      "location": "Chandigarh, Punjab",
+      "image": "https://images.unsplash.com/photo-1502673530728-f79b4cab31b1?auto=format&fit=crop&w=800&q=80",
+      "description": "Well-maintained row house with rooftop access and two balconies.",
+      "price": "1.25 Cr",
+      "areaSqFt": 2000,
+      "amenities": [
+        "Parking",
+        "Terrace",
+        "WiFi",
+        "Garden"
+      ],
+      "status": "Under Construction",
+      "owner": {
+        "name": "Mr. Manpreet Singh",
+        "contact": "9811122334"
+      },
+      "facing": "North-East",
+      "totalFloors": 2,
+      "nearbyLandmarks": [
+        "Elante Mall",
+        "Rose Garden"
+      ]
+    },
+    {
+      "id": 42,
+      "propertyName": "Skyline Crown Penthouse",
+      "type": "Penthouse",
+      "bhk": "4 BHK",
+      "address": "89 Sector 17",
+      "street": "Sector 17",
+      "location": "Gurugram, Haryana",
+      "image": "https://images.unsplash.com/photo-1588854337236-daa08b4f8a04?auto=format&fit=crop&w=800&q=80",
+      "description": "Luxury penthouse with private elevator and Jacuzzi.",
+      "price": "3.55 Cr",
+      "areaSqFt": 4700,
+      "amenities": [
+        "Jacuzzi",
+        "Terrace",
+        "Security",
+        "Private Pool"
+      ],
+      "status": "Available",
+      "owner": {
+        "name": "Ms. Shweta Kapoor",
+        "contact": "9898989898"
+      },
+      "facing": "East",
+      "totalFloors": 15,
+      "nearbyLandmarks": [
+        "Cyber Hub",
+        "DLF City Center"
+      ]
+    },
+    {
+      "id": 43,
+      "propertyName": "Duplex Dwell Elite",
+      "type": "Duplex",
+      "bhk": "3 BHK",
+      "address": "44 Rajaji Nagar",
+      "street": "Rajaji Nagar",
+      "location": "Bangalore, Karnataka",
+      "image": "https://images.unsplash.com/photo-1627404489920-3035d104a2e5?auto=format&fit=crop&w=800&q=80",
+      "description": "Smart duplex unit with separate work-from-home space.",
+      "price": "1.60 Cr",
+      "areaSqFt": 2300,
+      "amenities": [
+        "Modular Kitchen",
+        "Security",
+        "Clubhouse",
+        "Lift"
+      ],
+      "status": "Rented",
+      "owner": {
+        "name": "Mr. Raghav Bhat",
+        "contact": "9900099000"
+      },
+      "facing": "South-West",
+      "totalFloors": 4,
+      "nearbyLandmarks": [
+        "ISKCON Temple",
+        "Orion Mall"
+      ]
+    },
+    {
+      "id": 44,
+      "propertyName": "Verdant Escape Farmhouse",
+      "type": "Farmhouse",
+      "bhk": "4 BHK",
+      "address": "403 NH 48",
+      "street": "NH 48",
+      "location": "Surat, Gujarat",
+      "image": "https://images.unsplash.com/photo-1580587771838-bd6f6e03c47b?auto=format&fit=crop&w=800&q=80",
+      "description": "Nature-surrounded farmhouse perfect for leisure and small farming.",
+      "price": "2.60 Cr",
+      "areaSqFt": 3900,
+      "amenities": [
+        "Farm Land",
+        "Garden",
+        "Swimming Pool",
+        "WiFi"
+      ],
+      "status": "Available",
+      "owner": {
+        "name": "Mr. Hardik Patel",
+        "contact": "9822334455"
+      },
+      "facing": "East",
+      "totalFloors": 1,
+      "nearbyLandmarks": [
+        "Kamrej Toll Plaza",
+        "Sarthana Zoo"
+      ]
+    },
+    {
+      "id": 45,
+      "propertyName": "Metro Edge Plot",
+      "type": "Plot",
+      "bhk": "NA",
+      "address": "66 Sector 52",
+      "street": "Sector 52",
+      "location": "Noida, Uttar Pradesh",
+      "image": "https://images.unsplash.com/photo-1600585153962-01c3f5f9fba3?auto=format&fit=crop&w=800&q=80",
+      "description": "Corner residential plot near metro station with wide road access.",
+      "price": "88 L",
+      "areaSqFt": 1800,
+      "amenities": [
+        "Gated Entry",
+        "Drainage",
+        "Park Nearby",
+        "Water Line"
+      ],
+      "status": "Available",
+      "owner": {
+        "name": "Mrs. Neelam Verma",
+        "contact": "9700112233"
+      },
+      "facing": "North",
+      "totalFloors": 0,
+      "nearbyLandmarks": [
+        "Sector 52 Metro Station",
+        "City Centre Mall"
+      ]
+    },
+    {
+      "id": 46,
+      "propertyName": "Sea Breeze Retreat",
+      "type": "Resort",
+      "bhk": "4 BHK",
+      "address": "121 Gokarna Main Road",
+      "street": "Gokarna Main Road",
+      "location": "Gokarna, Karnataka",
+      "image": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80",
+      "description": "Peaceful resort home nestled in nature, close to serene beaches.",
+      "price": "2.75 Cr",
+      "areaSqFt": 3900,
+      "amenities": [
+        "Beach View",
+        "WiFi",
+        "Garden",
+        "Terrace"
+      ],
+      "status": "Available",
+      "owner": {
+        "name": "Mr. Suresh Nayak",
+        "contact": "9876523450"
+      },
+      "facing": "West",
+      "totalFloors": 2,
+      "nearbyLandmarks": [
+        "Om Beach",
+        "Mahabaleshwar Temple"
+      ]
+    },
+    {
+      "id": 47,
+      "propertyName": "CityNest BTM",
+      "type": "Apartment",
+      "bhk": "2 BHK",
+      "address": "225 BTM Layout",
+      "street": "BTM Layout",
+      "location": "Bangalore, Karnataka",
+      "image": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80",
+      "description": "Affordable and spacious apartment with good rental yield.",
+      "price": "76 L",
+      "areaSqFt": 1020,
+      "amenities": [
+        "Security",
+        "Lift",
+        "Parking",
+        "Power Backup"
+      ],
+      "status": "Rented",
+      "owner": {
+        "name": "Mrs. Kavya Ramesh",
+        "contact": "9845012345"
+      },
+      "facing": "North-East",
+      "totalFloors": 5,
+      "nearbyLandmarks": [
+        "BTM Bus Stop",
+        "Forum Mall",
+        "Jayadeva Hospital"
+      ]
+    },
+    {
+      "id": 48,
+      "propertyName": "Kaloor Grand Villa",
+      "type": "Villa",
+      "bhk": "4 BHK",
+      "address": "199 Kaloor",
+      "street": "Kaloor",
+      "location": "Kochi, Kerala",
+      "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+      "description": "Independent villa in central city, close to metro and malls.",
+      "price": "2.20 Cr",
+      "areaSqFt": 3700,
+      "amenities": [
+        "Terrace",
+        "Servant Quarters",
+        "Private Parking",
+        "Garden"
+      ],
+      "status": "Sold",
+      "owner": {
+        "name": "Mr. Shaji Mathew",
+        "contact": "9638527410"
+      },
+      "facing": "South",
+      "totalFloors": 2,
+      "nearbyLandmarks": [
+        "Kaloor Metro Station",
+        "Lulu Mall",
+        "Jawaharlal Stadium"
+      ]
+    },
+    {
+      "id": 49,
+      "propertyName": "Hilltop Farm Escape",
+      "type": "Farmhouse",
+      "bhk": "3 BHK",
+      "address": "33 Nandi Hills",
+      "street": "Nandi Hills",
+      "location": "Bangalore, Karnataka",
+      "image": "https://images.unsplash.com/photo-1580587771838-bd6f6e03c47b?auto=format&fit=crop&w=800&q=80",
+      "description": "Charming hillside farmhouse ideal for vacations and events.",
+      "price": "2.15 Cr",
+      "areaSqFt": 4200,
+      "amenities": [
+        "Farm Land",
+        "WiFi",
+        "Swimming Pool",
+        "Fruit Trees"
+      ],
+      "status": "Available",
+      "owner": {
+        "name": "Mr. Anand Kumar",
+        "contact": "9988776655"
+      },
+      "facing": "East",
+      "totalFloors": 1,
+      "nearbyLandmarks": [
+        "Nandi Hills Park",
+        "Bhoga Nandeeshwara Temple"
+      ]
+    },
+    {
+      "id": 50,
+      "propertyName": "Tech Valley Plot",
+      "type": "Plot",
+      "bhk": "NA",
+      "address": "401 Perungudi",
+      "street": "Perungudi",
+      "location": "Chennai, Tamil Nadu",
+      "image": "https://images.unsplash.com/photo-1600585153962-01c3f5f9fba3?auto=format&fit=crop&w=800&q=80",
+      "description": "Prime residential plot in fast-growing tech corridor area.",
+      "price": "1.10 Cr",
+      "areaSqFt": 2100,
+      "amenities": [
+        "Wide Roads",
+        "Water Line",
+        "Park Nearby",
+        "Drainage"
+      ],
+      "status": "Under Construction",
+      "owner": {
+        "name": "Mrs. Lakshmi Natarajan",
+        "contact": "9000123456"
+      },
+      "facing": "North",
+      "totalFloors": 0,
+      "nearbyLandmarks": [
+        "Taramani Metro",
+        "SP Infocity",
+        "ECR Link Road"
+      ]
     }
   ]
 }
