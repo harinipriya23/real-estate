@@ -1,18 +1,22 @@
 import { Hero } from "./pages/Hero";
 import { FAQs } from "./components/FAQs";
-import { ExploreProperty } from "./components/ExploreProperty";
+import { ExploreProperty } from "./pages/ExploreProperty";
 import { Experience } from "./components/Experience";
 import { Advantages } from "./components/Advantages";
-import { PropertyType } from "./components/PropertyType";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
   return (
     <>
       <Hero />
       <ExploreProperty />
-      {/* <Portfolio />
       <Experience />
-      <Advantages />
+      {/* <Advantages />
       <PropertyType />
       <FAQs /> */}
     </>

@@ -5,7 +5,11 @@ import propertyImg from "../assets/building/building3.jpg";
 
 export const Heading = () => {
   return (
-    <section className="bg-white dark:bg-black h-full col-span-1 grid grid-rows-3 lg:p-4">
+    <section
+      data-aos="fade-in-up"
+      data-aos-duration="500"
+      className="bg-white dark:bg-black h-full col-span-1 grid grid-rows-3 lg:p-4"
+    >
       <div className="flex justify-between row-span-1">
         <div className="flex justify-center gap-2 ">
           <PiBuildingApartmentFill className="h-6 md:h-8 w-6 md:w-8 motion-scale-in-50 motion-duration-1500" />
@@ -19,7 +23,7 @@ export const Heading = () => {
         <p className="text-[12px] md:text-[14px] motion-preset-slide-up-md motion-duration-1500">
           Building Your Dreams
         </p>
-        <h1 className="flex flex-col items-center text-2xl sm:text-3xl lg:text-4xl font-bold motion-preset-slide-up-md motion-duration-1500">
+        <h1 className="flex flex-col items-center text-[min(12vw,2.5rem)] font-bold motion-preset-slide-up-md motion-duration-1500">
           Real Estate in India:
           <span className="motion-preset-slide-up-md motion-duration-1500">
             Ideal for Living and Investing

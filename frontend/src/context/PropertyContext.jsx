@@ -1,5 +1,5 @@
-import React from "react";
 import axios from "axios";
+import { propertyData } from "./propertyData";
 import { createContext, useState, useEffect } from "react";
 
 // create context
@@ -9,79 +9,6 @@ export const PropertyContext = createContext();
 export const PropertyProvider = ({ children }) => {
   const [properties, setProperties] = useState([]);
   const [loading, setLoading] = useState(true);
-
-  const propertyData = [
-    {
-      id: 0,
-      type: "Resort",
-      img: "https://images.unsplash.com/photo-1606402179428-a57976d71fa4?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      link: "",
-      span: "col-span-2 grid grid-cols-2 gap-4 md:grid-cols-1 md:col-span-2 md:col-start-2 lg:col-span-3 lg:col-start-1 ",
-    },
-    {
-      id: 1,
-      type: "Apartment",
-      img: "https://images.unsplash.com/photo-1608974007646-4343e2b83b77?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTF8fGFwYXJ0bWVudCUyMGJ1aWxkaW5nfGVufDB8fDB8fHww",
-      link: "",
-      span: "md:col-span-2 md:col-start-5 lg:col-span-4 lg:col-start-1",
-    },
-    {
-      id: 2,
-      type: "Duplex",
-      img: "https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg",
-      link: "",
-      span: "md:col-span-2 lg:col-span-4 ",
-    },
-    {
-      id: 3,
-      type: "Villa",
-      img: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fGx1eHVyeSUyMHZpbGxhfGVufDB8fDB8fHww",
-      link: "",
-      span: "col-span-2 md:col-start-5 lg:col-span-3 lg:col-start-1",
-    },
-    {
-      id: 4,
-      type: "Row House",
-      img: "https://images.unsplash.com/photo-1651733834052-71680694092a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTU3fHxyb3clMjBob3VzZXxlbnwwfHwwfHx8MA%3D%3D",
-      link: "",
-      span: "md:col-span-3 lg:col-span-3 lg:col-start-4",
-    },
-    {
-      id: 5,
-      type: "Penthouse",
-      img: "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGhvdXNlfGVufDB8fDB8fHww",
-      link: "",
-      span: "md:col-span-3",
-    },
-    {
-      id: 6,
-      type: "Farmhouse",
-      img: "https://images.unsplash.com/photo-1674306147096-d4c052b9816d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjN8fHJlc29ydHxlbnwwfHwwfHx8MA%3D%3D",
-      link: "",
-      span: "col-start-2 md:col-start-1 md:col-span-2 lg:col-span-3",
-    },
-    {
-      id: 7,
-      type: "Plot",
-      img: "https://images.pexels.com/photos/32798469/pexels-photo-32798469.jpeg",
-      link: "",
-      span: " hidden md:block md:col-start-5 md:col-span-2 lg:col-span-4 lg:col-start-1",
-    },
-    {
-      id: 8,
-      type: "Studio Apartment",
-      img: "https://images.unsplash.com/photo-1709145883296-4443310e3be0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjZ8fGFwYXJ0bWVudCUyMGJ1aWxkaW5nfGVufDB8fDB8fHww",
-      link: "",
-      span: " hidden md:block md:col-start-2 md:col-span-2 lg:col-span-4 ",
-    },
-    {
-      id: 9,
-      type: "Townhouse",
-      img: "https://images.unsplash.com/photo-1705825533722-e562d3ee873c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fHRvd24lMjBob3VzZXxlbnwwfHwwfHx8MA%3D%3D",
-      link: "",
-      span: " hidden md:block md:col-start-4 md:col-span-2 lg:col-span-3 lg:col-start-1",
-    },
-  ];
 
   const fetchProperties = async () => {
     const url = "https://real-estate-4ama.onrender.com/properties";
