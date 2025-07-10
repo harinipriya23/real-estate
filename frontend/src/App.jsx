@@ -1,7 +1,7 @@
 import { Hero } from "./pages/Hero";
 import { FAQs } from "./components/FAQs";
 import { ExploreProperty } from "./pages/ExploreProperty";
-import { Experience } from "./components/Experience";
+import { Experience } from "./pages/Experience";
 import { Advantages } from "./components/Advantages";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -16,8 +16,8 @@ function App() {
       <Hero />
       <ExploreProperty />
       <Experience />
-      {/* <Advantages />
-      <PropertyType />
+      <Advantages />
+      {/*  <PropertyType />
       <FAQs /> */}
     </>
   );
