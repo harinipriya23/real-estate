@@ -1,11 +1,11 @@
-import { Hero } from "./pages/Hero";
-import { FAQs } from "./components/FAQs";
-import { ExploreProperty } from "./pages/ExploreProperty";
-import { Experience } from "./pages/Experience";
-import { Advantages } from "./components/Advantages";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { Hero } from "./pages/Hero";
+import { FAQs } from "./components/FAQs";
+import { Experience } from "./pages/Experience";
+import { Advantages } from "./pages/Advantages";
+import { ExploreProperty } from "./pages/ExploreProperty";
 
 function App() {
   useEffect(() => {
@@ -17,8 +17,7 @@ function App() {
       <ExploreProperty />
       <Experience />
       <Advantages />
-      {/*  <PropertyType />
-      <FAQs /> */}
+      <FAQs />
     </>
   );
 }

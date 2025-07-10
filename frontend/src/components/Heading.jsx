@@ -1,7 +1,7 @@
 import { Navbar } from "./Navbar";
-import { TbPhoneCall } from "react-icons/tb";
 import { PiBuildingApartmentFill } from "react-icons/pi";
 import propertyImg from "../assets/building/building3.jpg";
+import { CallButton } from "./CallButton";
 
 export const Heading = () => {
   return (
@@ -31,12 +31,7 @@ export const Heading = () => {
         </h1>
       </div>
       <div className="row-span-1 flex justify-between items-end font-inter ">
-        <div className=" flex items-center gap-2 bg-black dark:bg-white text-white dark:text-black rounded-full p-1 pr-3 md:p-2 md:pr-5 motion-preset-slide-right-md motion-duration-1500">
-          <TbPhoneCall className="bg-white text-black dark:bg-black dark:text-white w-6 h-6 p-1 rounded-full motion-scale-in-50 motion-duration-1500" />{" "}
-          <span className="text-[12px] md:text-[14px] xl:text-[16px]">
-            Call us now
-          </span>
-        </div>
+        <CallButton />
         <a href="#explore" className="flex items-center gap-2 md:gap-4">
           <p className="flex flex-col text-[12px] md:text-[16px] font-medium dark:text-gray-200 text-gray-900 motion-preset-slide-up-sm motion-duration-1500">
             Explore All <span>Our Properties</span>
