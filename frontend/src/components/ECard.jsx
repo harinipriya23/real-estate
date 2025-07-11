@@ -1,10 +1,6 @@
-import React from "react";
 import CountUp from "react-countup";
 import { TiPlus } from "react-icons/ti";
-import { CgMathPercent } from "react-icons/cg";
 import { FaPercent } from "react-icons/fa";
-import { MdOutlinePercent } from "react-icons/md";
-import { AiOutlinePercentage } from "react-icons/ai";
 import { useInView } from "react-intersection-observer";
 
 export const ECard = () => {

@@ -3,7 +3,7 @@ import { advInfo } from "../context/AdvInfo";
 
 export const Advantages = () => {
   return (
-    <section className="min-h-svh w-full bg-white text-black dark:bg-black dark:text-white space-y-2 p-4 md:mx-5">
+    <section className="min-h-svh w-full bg-white text-black dark:bg-black dark:text-white space-y-2 p-4">
       <div className="px-2 space-y-2">
         <p
           data-aos="fade-in-up"
@@ -29,7 +29,7 @@ export const Advantages = () => {
             key={id}
             data-aos="zoom-in-left"
             data-aos-delay={id * 100}
-            className="flex flex-col gap-2 bg-neutral-200 font-inter rounded-md p-4 h-52 sm:h-36 md:h-[260px] lg:h-[250px] xl:h-[220px]"
+            className="flex flex-col gap-2 bg-neutral-200 font-inter rounded-md p-4 h-64 sm:h-36 md:h-[260px] lg:h-[250px] xl:h-[220px]"
           >
             <div
               data-aos="fade-in-up"
@@ -43,7 +43,7 @@ export const Advantages = () => {
               data-aos="fade-in-up"
               data-aos-duration="500"
               data-aos-delay="500"
-              className="font-medium text-base lg:text-lg h-10 sm:h-5 md:h-16 lg:h-14 xl:h-11"
+              className="font-medium text-base lg:text-lg h-16 sm:h-5 md:h-16 lg:h-14 xl:h-11"
             >
               {heading}
             </p>

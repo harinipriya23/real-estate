@@ -2,7 +2,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { Hero } from "./pages/Hero";
-import { FAQs } from "./components/FAQs";
+import { FAQs } from "./pages/FAQs";
+import { Footer } from "./components/Footer";
 import { Experience } from "./pages/Experience";
 import { Advantages } from "./pages/Advantages";
 import { ExploreProperty } from "./pages/ExploreProperty";
@@ -18,6 +19,7 @@ function App() {
       <Experience />
       <Advantages />
       <FAQs />
+      <Footer />
     </>
   );
 }
