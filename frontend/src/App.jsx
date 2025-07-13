@@ -3,10 +3,11 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { Hero } from "./pages/Hero";
 import { FAQs } from "./pages/FAQs";
-import { Footer } from "./components/Footer";
+import { Footer } from "./pages/Footer";
 import { Experience } from "./pages/Experience";
 import { Advantages } from "./pages/Advantages";
 import { ExploreProperty } from "./pages/ExploreProperty";
+import { StartJourney } from "./pages/StartJourney";
 
 function App() {
   useEffect(() => {
@@ -19,6 +20,7 @@ function App() {
       <Experience />
       <Advantages />
       <FAQs />
+      <StartJourney />
       <Footer />
     </>
   );

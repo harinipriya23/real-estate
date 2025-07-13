@@ -1,6 +1,6 @@
 import { Navbar } from "./Navbar";
 import { PiBuildingApartmentFill } from "react-icons/pi";
-import propertyImg from "../assets/building/building3.jpg";
+import propertyImg from "../assets/building/building5.webp";
 import { CallButton } from "./CallButton";
 
 export const Heading = () => {

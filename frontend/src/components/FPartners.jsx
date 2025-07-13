@@ -9,7 +9,7 @@ import P8 from "../assets/partners/p8.png";
 import Marquee from "react-fast-marquee";
 
 export const FPartners = () => {
-  const partners = [P1, P2, P3, P4, P5, P6, P7, P8];
+  const partners = [P1, P2, P3, P4, P5, P6, P7, P8, P4, P6];
 
   return (
     <section className="">

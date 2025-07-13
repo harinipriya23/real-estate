@@ -1,5 +1,3 @@
-import React from "react";
-
 import { TbPhoneCall } from "react-icons/tb";
 
 export const EImage = () => {
