@@ -1,14 +1,27 @@
-import { useState } from "react";
+import AOS from "aos";
+import { useState, useEffect } from "react";
 import { IoSunny } from "react-icons/io5";
 import { BsMoonStarsFill } from "react-icons/bs";
 
 export const Navbar = () => {
   const [theme, setTheme] = useState("light");
-  const toggleTheme = () => {
-    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
-    document.documentElement.classList.toggle("dark");
-  };
 
+  useEffect(() => {
+    const savedTheme = localStorage.getItem("theme") || "light";
+    setTheme(savedTheme);
+    document.documentElement.classList.toggle("dark", savedTheme === "dark");
+  }, []);
+
+  const toggleTheme = () => {
+    const newTheme = theme === "light" ? "dark" : "light";
+    setTheme(newTheme);
+    localStorage.setItem("theme", newTheme);
+    document.documentElement.classList.toggle("dark", newTheme === "dark");
+
+    setTimeout(() => {
+      AOS.refresh();
+    }, 200);
+  };
   return (
     <div>
       <button

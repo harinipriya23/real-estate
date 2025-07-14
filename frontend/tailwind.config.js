@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+import motion from "tailwindcss-motion";
+import animate from "tailwindcss-animate";
+
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   darkMode: "class",
@@ -11,5 +14,5 @@ export default {
       },
     },
   },
-  plugins: [require("tailwindcss-motion"), require("tailwindcss-animate")],
+  plugins: [motion, animate],
 };
