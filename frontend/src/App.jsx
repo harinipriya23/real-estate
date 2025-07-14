@@ -1,13 +1,13 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useContext, useEffect } from "react";
 import { Hero } from "./pages/Hero";
 import { FAQs } from "./pages/FAQs";
 import { Footer } from "./pages/Footer";
+import { useContext, useEffect } from "react";
 import { Experience } from "./pages/Experience";
 import { Advantages } from "./pages/Advantages";
-import { ExploreProperty } from "./pages/ExploreProperty";
 import { StartJourney } from "./pages/StartJourney";
+import { ExploreProperty } from "./pages/ExploreProperty";
 import { PropertyContext } from "./context/PropertyContext";
 
 function App() {
