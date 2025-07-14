@@ -7,7 +7,7 @@ export const FHeading = () => {
         data-aos-duration="500"
         className=" flex gap-2 items-center text-base sm:text-lg md:text-xl font-medium font-roboto"
       >
-        <span className="w-2 h-2 rounded-full bg-black font-inter"></span>
+        <span className="w-2 h-2 rounded-full bg-black dark:bg-white font-inter"></span>
         Explore Property FAQs
       </p>
       <div className="capitalize self-center relative space-y-2 md:space-y-4 font-poppins text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold">

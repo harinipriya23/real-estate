@@ -3,22 +3,25 @@ import { CallButton } from "../components/CallButton";
 
 export const Advantages = () => {
   return (
-    <section className="min-h-svh w-full bg-white text-black dark:bg-black dark:text-white space-y-2 p-4">
+    <section
+      id="advantages"
+      className="w-full bg-white text-black dark:bg-zinc-900 dark:text-white space-y-2 p-4"
+    >
       <div className="px-2 space-y-2">
         <p
           data-aos="fade-in-up"
           data-aos-duration="500"
           className=" flex gap-2 items-center text-base md:text-lg font-medium font-roboto"
         >
-          <span className="w-2 h-2 rounded-full bg-black"></span> Explore Our
-          Advantages
+          <span className="w-2 h-2 rounded-full bg-black dark:bg-white"></span>{" "}
+          Explore Our Advantages
         </p>
         <div className="relative capitalize flex justify-between font-poppins text-2xl md:text-4xl lg:text-5xl font-extrabold whitespace-nowrap">
           <div data-aos="fade-in-up" data-aos-duration="500">
             <p>why india stands</p>
             <p className="mt-2 md:mt-4">unrivalled?</p>
           </div>{" "}
-          <span className="text-base font-normal absolute bottom-2 right-2">
+          <span className="text-base font-medium absolute bottom-0 right-0">
             <CallButton />
           </span>
         </div>
@@ -29,7 +32,7 @@ export const Advantages = () => {
             key={id}
             data-aos="zoom-in-left"
             data-aos-delay={id * 100}
-            className="flex flex-col gap-2 bg-neutral-200 font-inter rounded-md p-4 h-64 sm:h-36 md:h-[260px] lg:h-[250px] xl:h-[220px]"
+            className="flex flex-col gap-2 bg-neutral-200 dark:bg-zinc-800 font-inter rounded-md p-4 h-64 sm:h-36 md:h-[260px] lg:h-[250px] xl:h-[220px]"
           >
             <div
               data-aos="fade-in-up"
@@ -51,7 +54,7 @@ export const Advantages = () => {
               data-aos="fade-in-up"
               data-aos-duration="500"
               data-aos-delay="500"
-              className="text-xs lg:text-sm text-justify text-gray-600"
+              className="text-xs lg:text-sm text-justify text-neutral-600 dark:text-zinc-300"
             >
               {content}
             </p>

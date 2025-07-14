@@ -3,7 +3,7 @@ import { HImage } from "../components/HImage";
 
 export const Hero = () => {
   return (
-    <div className="min-h-svh w-full grid grid-cols-1 lg:grid-cols-2 p-4 gap-4">
+    <div className="min-h-screen w-full grid grid-cols-1 lg:grid-cols-2 p-4 gap-4">
       <Heading />
       <HImage />
     </div>

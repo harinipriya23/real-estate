@@ -20,7 +20,7 @@ export const FQuestions = () => {
           role="button"
           aria-expanded={isOpenId === id}
           tabIndex="0"
-          className="p-4 my-2 rounded-md shadow-md shadow-black/20"
+          className="p-4 my-2 rounded-md shadow-md shadow-black/20 dark:shadow-neutral-400/20"
         >
           <div className="grid grid-cols-12 place-items-center gap-4">
             <p className="text-base font-semibold col-span-11">{question}</p>

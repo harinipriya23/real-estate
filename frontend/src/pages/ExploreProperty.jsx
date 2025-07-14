@@ -8,7 +8,10 @@ export const ExploreProperty = () => {
   if (loading) return <p>Loading properties...</p>;
 
   return (
-    <section className="h-full w-full py-4 lg:py-6 lg:px-4 bg-neutral-100 rounded-xl text-black dark:bg-zinc-950 dark:text-zinc-100">
+    <section
+      id="properties"
+      className="w-full py-4 lg:py-6 lg:px-4 bg-neutral-100 rounded-xl text-black dark:bg-neutral-900 dark:text-neutral-100"
+    >
       <div>
         <p
           data-aos="slide-up"
@@ -23,7 +26,7 @@ export const ExploreProperty = () => {
           data-aos="fade-in-up"
           data-aos-duration="500"
           data-aos-delay="1000"
-          className=" md:col-start-8 lg:col-start-8 md:col-span-3 lg:col-span-4 cols-start-2 row-start-1 text-[16px] md:text-[18px] md:px-2 lg:text-[20px] lg:font-bold font-semibold font-poppins px-4 text-center self-center"
+          className=" md:col-start-8 lg:col-start-8 md:col-span-3 lg:col-span-4 cols-start-2 row-start-1 md:px-2 text-sm sm:text-base md:text-lg font-medium font-poppins px-4 text-center self-center"
         >
           Premium properties in prime locations with every facility you need
         </p>
@@ -55,7 +58,7 @@ export const ExploreProperty = () => {
           data-aos="fade-in-up"
           data-aos-duration="500"
           data-aos-delay="1000"
-          className="row-start-5 md:col-start-2 md:row-start-3 md:col-span-3 lg:col-start-2 lg:col-span-4 text-[16px] md:text-[18px] md:px-2 lg:text-[20px] lg:font-bold font-semibold font-poppins px-4 text-center self-center"
+          className="row-start-5 md:col-start-2 md:row-start-3 md:col-span-3 lg:col-start-2 lg:col-span-4 text-sm sm:text-base md:text-lg md:px-2 font-medium font-poppins px-4 text-center self-center"
         >
           Designed with care, build on trust, your satisfaction is our promise
         </p>

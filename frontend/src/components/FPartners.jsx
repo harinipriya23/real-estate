@@ -12,7 +12,7 @@ export const FPartners = () => {
   const partners = [P1, P2, P3, P4, P5, P6, P7, P8, P4, P6];
 
   return (
-    <section className="">
+    <section className="h-full">
       <p
         data-aos="fade-in-up"
         data-duration="500"
@@ -25,7 +25,7 @@ export const FPartners = () => {
           <img
             key={i}
             src={item}
-            className="w-24 h-16 md:w-32 md:h-20 mx-4 object-contain hover:motion-scale-in-110 hover:motion-duration-500"
+            className="w-24 h-16 md:w-32 md:h-20 mx-4 my-2 md:my-4 object-contain hover:scale-105 hover:duration-700"
           />
         ))}
       </Marquee>

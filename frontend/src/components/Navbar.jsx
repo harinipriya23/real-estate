@@ -13,7 +13,7 @@ export const Navbar = () => {
     <div>
       <button
         onClick={toggleTheme}
-        className="motion-scale-in-50 motion-duration-1500"
+        className="motion-scale-in-50 motion-duration-1500 hover:-motion-rotate-in-180 hover:motion-duration-500"
       >
         {theme === "light" ? (
           <BsMoonStarsFill size={25} />

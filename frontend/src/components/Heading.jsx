@@ -32,7 +32,10 @@ export const Heading = () => {
       </div>
       <div className="row-span-1 flex justify-between items-end font-inter ">
         <CallButton />
-        <a href="#explore" className="flex items-center gap-2 md:gap-4">
+        <a
+          href="#properties"
+          className="flex items-center gap-2 md:gap-4 transition-all duration-300 ease-in-out hover:scale-95"
+        >
           <p className="flex flex-col text-[12px] md:text-[16px] font-medium dark:text-gray-200 text-gray-900 motion-preset-slide-up-sm motion-duration-1500">
             Explore All <span>Our Properties</span>
           </p>
