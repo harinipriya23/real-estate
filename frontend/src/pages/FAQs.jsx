@@ -1,5 +1,5 @@
-import { FPartners } from "../components/FPartners";
 import { FHeading } from "../components/FHeading";
+import { FPartners } from "../components/FPartners";
 import { FQuestions } from "../components/FQuestions";
 
 export const FAQs = () => {

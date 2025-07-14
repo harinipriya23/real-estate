@@ -1,5 +1,5 @@
-import { FaFacebookF, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import { PiBuildingApartmentFill } from "react-icons/pi";
+import { FaFacebookF, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 
 export const BLinks = () => {
   const quickLinks = [

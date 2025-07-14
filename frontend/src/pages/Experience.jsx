@@ -1,4 +1,3 @@
-import React from "react";
 import { ETeam } from "../components/ETeam";
 import { EImage } from "../components/EImage";
 

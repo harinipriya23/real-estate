@@ -1,7 +1,7 @@
 import { GiGavel } from "react-icons/gi";
 import { BsGlobeAsiaAustralia } from "react-icons/bs";
-import { FaBuilding, FaMoneyBillAlt, FaUserShield } from "react-icons/fa";
 import { MdTrendingUp, MdLocationOn, MdTimeline } from "react-icons/md";
+import { FaBuilding, FaMoneyBillAlt, FaUserShield } from "react-icons/fa";
 
 export const advInfo = [
   {

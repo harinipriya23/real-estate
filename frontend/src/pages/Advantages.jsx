@@ -1,5 +1,5 @@
-import { CallButton } from "../components/CallButton";
 import { advInfo } from "../context/AdvInfo";
+import { CallButton } from "../components/CallButton";
 
 export const Advantages = () => {
   return (

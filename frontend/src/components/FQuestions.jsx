@@ -1,7 +1,7 @@
+import { useState } from "react";
 import { faqData } from "../context/Q&Answers";
 import { MdKeyboardArrowUp } from "react-icons/md";
 import { MdKeyboardArrowDown } from "react-icons/md";
-import { useState } from "react";
 
 export const FQuestions = () => {
   const [isOpenId, setIsOpenId] = useState(null);

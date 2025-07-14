@@ -1,4 +1,3 @@
-import React from "react";
 import { ECard } from "./ECard";
 
 export const ETeam = () => {
