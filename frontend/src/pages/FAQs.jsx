@@ -9,7 +9,7 @@ export const FAQs = () => {
       className="w-full rounded-xl p-4 space-y-4 bg-neutral-100 text-black dark:bg-black dark:text-white"
     >
       <FPartners />
-      <div className="flex flex-col lg:flex-row overflow-hidden">
+      <div className="flex flex-col lg:flex-row gap-4">
         <FHeading />
         <FQuestions />
       </div>

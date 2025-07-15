@@ -10,10 +10,14 @@ export const FQuestions = () => {
     setIsOpenId(isOpenId === id ? null : id);
   };
   return (
-    <section className="lg:flex-1 h-full font-inter rounded-lg bg-white text-black dark:bg-neutral-800 dark:text-white m-2 p-4">
+    <section className="lg:flex-1 h-full font-inter rounded-lg bg-white text-black dark:bg-neutral-900 dark:text-white m-2 p-4">
       {faqData.map(({ topic, faqs }) => (
         <div>
-          <p className="text-base font-poppins md:text-lg font-semibold text-gray-700 dark:text-gray-200">
+          <p
+            data-aos="fade-in-up"
+            data-aos-delay="700"
+            className="text-base font-poppins md:text-lg font-semibold text-gray-700 dark:text-gray-200"
+          >
             {topic}
           </p>
           {faqs.map(({ id, question, answer }) => (

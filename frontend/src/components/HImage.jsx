@@ -27,7 +27,11 @@ export const HImage = () => {
         src={img[currentIndex]}
         className="h-full w-full object-cover rounded-lg shadow-sm motion-scale-in-90 motion-duration-1500"
       />
-      <div className="absolute top-0 left-0 right-0 bg-black/30 h-full font-medium text-white z-10 px-4 py-10 flex items-start justify-evenly text-[10px] md:text-[14px] lg:text-[16px]">
+      <div
+        data-aos="fade-in-up"
+        data-aos-duration="500"
+        className="absolute top-0 left-0 right-0 rounded-lg bg-black/30 h-full font-medium text-white z-10 px-4 py-10 flex items-start justify-evenly text-[10px] md:text-[14px] lg:text-[16px] motion-scale-in-90 motion-duration-1500"
+      >
         <p className="flex flex-col items-center whitespace-nowrap motion-preset-slide-up-md motion-duration-1500">
           7+ Years of Expertise<span>Thousands of happy moves</span>
         </p>
