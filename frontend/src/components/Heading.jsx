@@ -24,9 +24,9 @@ export const Heading = () => {
           Building Your Dreams
         </p>
         <h1 className="flex flex-col items-center text-lg md:text-2xl lg:text-3xl xl:text-4xl font-bold motion-preset-slide-up-md motion-duration-1500">
-          Real Estate in India:
+          India’s Elite Residences
           <span className="motion-preset-slide-up-md motion-duration-1500">
-            Ideal for Living and Investing
+            A Legacy of Comfort and Wealth
           </span>
         </h1>
       </div>

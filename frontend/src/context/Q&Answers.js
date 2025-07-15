@@ -1,62 +1,74 @@
 export const faqData = [
   {
-    id: 1,
-    question: "Is this project legally approved and RERA certified?",
-    answer:
-      "Yes, all listed projects are verified and RERA certified. We ensure legal transparency and full documentation for your peace of mind.",
+    topic: "Exclusive Amenities and Lifestyle Perks",
+    faqs: [
+      {
+        id: 1,
+        question: "What premium amenities are included in this project?",
+        answer:
+          "Our project offers exclusive amenities such as a private clubhouse, rooftop infinity pool, wellness spa, business lounge, smart home integration, and valet services.",
+      },
+      {
+        id: 5,
+        question:
+          "Are there concierge or lifestyle management services available?",
+        answer:
+          "Yes, residents enjoy concierge services for travel, dining, housekeeping, car rentals, and event planning through our on-site luxury management team.",
+      },
+    ],
   },
   {
-    id: 2,
-    question: "Can I book a property remotely if I’m not in the city?",
-    answer:
-      "Absolutely. We support virtual site visits and secure online booking to make the process convenient from anywhere.",
+    topic: "Personalization and Financial Flexibility",
+    faqs: [
+      {
+        id: 2,
+        question:
+          "Can I customize the interiors and finishes to my preferences?",
+        answer:
+          "Yes, we offer bespoke interior customization including designer kitchens, imported marble flooring, premium fixtures, and layout modifications tailored to your taste.",
+      },
+      {
+        id: 6,
+        question:
+          "Do you assist with luxury home loans or premium financing options?",
+        answer:
+          "We partner with top-tier banks and wealth advisors to offer personalized financing plans, low-interest luxury home loans, and investment consulting.",
+      },
+    ],
   },
   {
-    id: 3,
-    question: "Are there any hidden charges apart from the listed price?",
-    answer:
-      "No, we maintain complete transparency. All taxes, registration fees, and other charges are clearly shared upfront.",
+    topic: "Prime Location and Premium Security",
+    faqs: [
+      {
+        id: 3,
+        question: "Is the property located in a high-value neighborhood?",
+        answer:
+          "Absolutely. Our project is situated in a prime, upscale locality with proximity to elite schools, golf courses, luxury malls, and five-star hotels.",
+      },
+      {
+        id: 4,
+        question: "What kind of security and privacy features are provided?",
+        answer:
+          "The community is secured with 24/7 manned surveillance, facial recognition access, private elevators, video door phones, and high-end biometric systems.",
+      },
+    ],
   },
   {
-    id: 4,
-    question: "How do I know if the property is in a good location?",
-    answer:
-      "We provide location insights like connectivity, nearby infrastructure, and future development potential. You’ll also get access to area ratings and maps.",
-  },
-  {
-    id: 5,
-    question: "What payment options or EMI plans are available?",
-    answer:
-      "We offer flexible payment plans and assist with bank tie-ups for home loans. EMIs and down payments can be customized based on your eligibility.",
-  },
-  {
-    id: 6,
-    question: "Can I visit the site before making any decision?",
-    answer:
-      "Yes, you can schedule a site visit with our team. We offer both physical and virtual walkthroughs.",
-  },
-  {
-    id: 7,
-    question: "Do you assist with the home loan process?",
-    answer:
-      "Yes, we collaborate with leading banks to help you get home loans at competitive rates. Our team will guide you through the paperwork and approval.",
-  },
-  {
-    id: 8,
-    question: "Will I get help even after purchasing the property?",
-    answer:
-      "Definitely. Our support continues post-purchase for services like registration, handover, and interior consultation.",
-  },
-  {
-    id: 9,
-    question: "How do I know this isn’t a fraud?",
-    answer:
-      "All listings undergo strict verification and legal checks. We maintain transparency and work only with trusted builders and developers.",
-  },
-  {
-    id: 10,
-    question: "Can NRIs or foreigners invest through your platform?",
-    answer:
-      "Yes, NRIs can invest securely with digital documentation. We also offer end-to-end support tailored to NRI property buyers.",
+    topic: "Legal Clarity and Private Viewing Experience",
+    faqs: [
+      {
+        id: 7,
+        question:
+          "Is this property RERA approved and compliant with legal norms?",
+        answer:
+          "Yes, the project is fully RERA compliant and all legal documentation is transparent, with due diligence completed for both domestic and international buyers.",
+      },
+      {
+        id: 8,
+        question: "Can I schedule a private site visit or virtual walkthrough?",
+        answer:
+          "Of course. We offer VIP site visits by appointment, luxury transport pickup, and 4K virtual tours for international or remote clients.",
+      },
+    ],
   },
 ];
