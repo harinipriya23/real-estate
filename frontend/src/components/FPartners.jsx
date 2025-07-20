@@ -1,18 +1,10 @@
-import P1 from "../assets/partners/p1.png";
-import P2 from "../assets/partners/p2.png";
-import P3 from "../assets/partners/p3.png";
-import P4 from "../assets/partners/p4.png";
-import P5 from "../assets/partners/p5.png";
-import P6 from "../assets/partners/p6.png";
-import P7 from "../assets/partners/p7.png";
-import P8 from "../assets/partners/p8.png";
+import { partners_light } from "../assets/Partners";
+import { partners_dark } from "../assets/Partners";
 import Marquee from "react-fast-marquee";
 
 export const FPartners = () => {
-  const partners = [P1, P2, P3, P4, P5, P6, P7, P8, P4, P6];
-
   return (
-    <section className="h-full">
+    <section className="h-full lg:h-[200px]">
       <p
         data-aos="fade-in-up"
         data-duration="500"
@@ -21,11 +13,18 @@ export const FPartners = () => {
         Our Valued Partners
       </p>
       <Marquee speed={50}>
-        {partners.map((item, i) => (
+        {partners_dark.map((item, i) => (
           <img
             key={i}
             src={item}
-            className="w-24 h-16 md:w-32 md:h-20 mx-4 my-2 md:my-4 object-contain hover:scale-105 hover:duration-700"
+            className="hidden dark:block w-24 h-16 sm:w-28 sm:h-[76px] md:w-32 md:h-20 lg:w-36 lg:h-24 xl:h-28 xl:w-40 object-contain hover:scale-105 hover:duration-700"
+          />
+        ))}
+        {partners_light.map((item, i) => (
+          <img
+            key={i}
+            src={item}
+            className="block dark:hidden w-24 h-16 sm:w-28 sm:h-[76px] md:w-32 md:h-20 lg:w-36 lg:h-24 xl:h-28 xl:w-40 object-contain hover:scale-105 hover:duration-700"
           />
         ))}
       </Marquee>
