@@ -3,17 +3,16 @@ const fs = require("fs");
 const path = require("path");
 const Papa = require("papaparse");
 const cors = require("cors");
-require("dotenv").config(); // Load .env variables
+require("dotenv").config();
 
 const app = express();
 app.use(cors());
 
 const PORT = process.env.PORT || 8080;
 
-// Read and parse CSV file
+// Read CSV and send JSON
 app.get("/api/properties", (req, res) => {
   const csvPath = path.join(__dirname, "properties.csv");
-  console.log("Looking for CSV at:", csvPath);
 
   fs.readFile(csvPath, "utf8", (err, csvData) => {
     if (err) {
@@ -25,9 +24,29 @@ app.get("/api/properties", (req, res) => {
       header: true,
       skipEmptyLines: true,
       complete: (results) => {
-        res.json(results.data);
+        res.json(results.data || []);
       },
     });
+  });
+});
+
+// Read from db.json
+app.get("/api/propertyType", (req, res) => {
+  const jsonPath = path.join(__dirname, "db.json");
+
+  fs.readFile(jsonPath, "utf8", (err, jsonData) => {
+    if (err) {
+      console.error("JSON Read Error:", err);
+      return res.status(500).json({ error: "Failed to read JSON file" });
+    }
+
+    try {
+      const parsedData = JSON.parse(jsonData);
+      res.json(parsedData.propertyType || []);
+    } catch (parseErr) {
+      console.error("JSON Parse Error:", parseErr);
+      res.status(500).json({ error: "Failed to parse JSON file" });
+    }
   });
 });
 
