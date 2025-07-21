@@ -42,7 +42,7 @@ app.get("/api/propertyType", (req, res) => {
 
     try {
       const parsedData = JSON.parse(jsonData);
-      res.json(parsedData.propertyType || []);
+      res.json(parsedData.properties || []);
     } catch (parseErr) {
       console.error("JSON Parse Error:", parseErr);
       res.status(500).json({ error: "Failed to parse JSON file" });
