@@ -11,16 +11,16 @@ export const FQuestions = () => {
   };
   return (
     <section className="lg:flex-1 h-full font-inter rounded-lg bg-white text-black dark:bg-neutral-900 dark:text-white m-2 p-4">
-      {faqData.map(({ topic, faqs }) => (
-        <div>
+      {faqData.map((topicItem, topicIndex) => (
+        <div key={topicIndex}>
           <p
             data-aos="fade-in-up"
             data-aos-delay="700"
             className="text-base font-poppins md:text-lg font-semibold text-gray-700 dark:text-gray-200"
           >
-            {topic}
+            {topicItem.topic}
           </p>
-          {faqs.map(({ id, question, answer }) => (
+          {topicItem.faqs.map(({ id, question, answer }) => (
             <div
               key={id}
               data-aos="zoom-in-up"

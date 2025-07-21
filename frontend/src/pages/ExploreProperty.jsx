@@ -3,10 +3,10 @@ import { BsArrowUpRightCircle } from "react-icons/bs";
 import { PropertyContext } from "../context/PropertyContext";
 
 export const ExploreProperty = () => {
-  const { loading, propertyData } = useContext(PropertyContext);
+  const { loading, propertyData, properties } = useContext(PropertyContext);
 
   if (loading) return <p>Loading properties...</p>;
-
+  console.log(properties);
   return (
     <section
       id="properties"
