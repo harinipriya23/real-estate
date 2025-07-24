@@ -9,6 +9,7 @@ import { Advantages } from "./pages/Advantages";
 import { StartJourney } from "./pages/StartJourney";
 import { ExploreProperty } from "./pages/ExploreProperty";
 import { PropertyContext } from "./context/PropertyContext";
+import { AdvancedProperties } from "./pages/AdvancedProperties";
 
 function App() {
   useEffect(() => {
@@ -23,7 +24,8 @@ function App() {
       {!loading && (
         <main>
           <Hero />
-          <ExploreProperty />
+          <AdvancedProperties />
+          {/* <ExploreProperty /> */}
           <Experience />
           <Advantages />
           <FAQs />

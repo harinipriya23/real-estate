@@ -11,7 +11,7 @@ export const PropertyProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
 
   const fetchProperties = async () => {
-    const url = "https://real-estate-4ama.onrender.com/api/properties";
+    const url = "https://real-estate-4ama.onrender.com/api/propertyType";
 
     try {
       const response = await axios.get(url);
