@@ -1,9 +1,25 @@
-import { useContext, useEffect, useState } from "react";
+import { useState } from "react";
 import { DropDown } from "../components/DropDown";
 import { MdKeyboardArrowDown, MdOutlineSearch } from "react-icons/md";
-import { PropertyContext } from "../context/PropertyContext";
+import { usePropertyContext } from "../context/PropertyContext";
 
 export const AdvancedProperties = () => {
+
+  const { properties, filterState, filterDispatch } = usePropertyContext()
+  
+  const filteredProperties = properties.filter((item) => {
+    const { purpose, location, priceRange } = filterState ;
+    
+    const matchedPurpose = item.purpose == purpose;
+    const matchedLocation = !location || item.location.toLowerCase().includes(location.toLowerCase())
+    const matchedMinPrice = !priceRange.min || item.price >= priceRange.min
+    const matchedMaxPrice = !priceRange.max || item.price <= priceRange.max
+
+    
+    return matchedPurpose && matchedLocation && matchedMaxPrice && matchedMinPrice
+  })
+  console.log(filterState)
+  console.log("filterd : " + filteredProperties)
   const priceRanges = [
     { label: "Any price", min: null, max: null },
     { label: "₹50L - ₹1Cr", min: 5000000, max: 10000000 },
@@ -14,30 +30,8 @@ export const AdvancedProperties = () => {
   const action = [{ label: "Buy" }, { label: "Rent" }];
 
   const [isActionOpen, setIsActionOpen] = useState(false);
-  const [actionSelected, setActionSelected] = useState("Buy");
   const [isPriceRangeOpen, setIsPriceRangeOpen] = useState(false);
-  const [isPriceRangeSelected, setIsPriceRangeSelected] = useState("Price");
-
-  const handleActionOption = (value) => {
-    setActionSelected(value);
-    setIsActionOpen(false);
-  };
-
-  const handlePriceRange = (value) => {
-    setIsPriceRangeSelected(value);
-    setIsPriceRangeOpen(false);
-  };
-
-  const { properties } = useContext(PropertyContext);
-
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const slides = properties.slice(7, 11);
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % slides.length);
-    }, 10000);
-    return () => clearInterval(interval);
-  }, [slides.length]);
+ 
   return (
     <section className="w-full py-4 lg:py-6 lg:px-4 bg-neutral-100 rounded-xl text-black dark:bg-neutral-900 dark:text-neutral-100">
       <div className="space-y-2">
@@ -56,25 +50,25 @@ export const AdvancedProperties = () => {
                 onClick={() => setIsActionOpen(!isActionOpen)}
                 className="flex justify-between items-center w-full px-4 py-2 bg-white rounded-md shadow-sm hover:bg-neutral-200"
               >
-                {actionSelected}
+               {filterState.purpose}
                 <MdKeyboardArrowDown className="ml-2 text-lg" />
               </button>
               {isActionOpen && (
-                <DropDown labels={action} handleSelect={handleActionOption} />
-              )}
+                <DropDown options={action} dispatchType="SET_PURPOSE" isObject={false} />
+                 )}
             </div>
             <div className="w-1/2 sm:w-2/3">
               <button
                 onClick={() => setIsPriceRangeOpen(!isPriceRangeOpen)}
                 className="flex justify-between items-center w-full px-4 py-2  bg-white rounded-md shadow-sm hover:bg-neutral-200"
               >
-                {isPriceRangeSelected}
+                {filterState.priceRange?.label}
                 <MdKeyboardArrowDown className="ml-2 text-lg" />
               </button>
               {isPriceRangeOpen && (
                 <DropDown
-                  labels={priceRanges}
-                  handleSelect={handlePriceRange}
+                  options={priceRanges} dispatchType="PRICE_RANGE" isObject={true}
+                 
                 />
               )}
             </div>{" "}
@@ -82,7 +76,7 @@ export const AdvancedProperties = () => {
           <div className="flex justify-between gap-4 items-center font-inter px-4 sm:px-0 my-2">
             {" "}
             <div className="relative w-2/3 flex items-center">
-              <input
+              <input   onChange={(e) => filterDispatch({ type: "LOCATION", payload: e.target.value })}
                 placeholder="Search location"
                 className=" w-full pl-8 py-2 bg-white rounded-md shadow-sm outline-none hover:bg-neutral-50 text-gray-700"
               />
@@ -94,12 +88,12 @@ export const AdvancedProperties = () => {
           </div>
         </div>
       </div>
-      <div className="px-4 my-2">
+      {/* <div className="px-4 my-2">
         <p className="font-semibold text-lg font-poppins ">
           Featured properties
         </p>
-        <div className="my-2 px-4 space-y-4 ">
-          <div className="relative overflow-hidden group">
+        <div className=" my-2 px-4 space-y-4 ">
+          <div className="relative overflow-hidden group sm:hidden">
             <img
               src={slides[currentIndex].image}
               alt={slides[currentIndex].propertyName}
@@ -124,10 +118,34 @@ export const AdvancedProperties = () => {
                   />
                 ))}
               </div>
-            </div>
+            </div>{" "}
           </div>
+          <div className="hidden sm:grid grid-cols-12 sm:gap-4">
+            {slides.map(({ id, propertyName, image, location }, index) => {
+              const span = colspan[index % colspan.length];
+              return (
+                <div
+                  key={id}
+                  className={`relative group h-[180px] lg:h-[280px] ${span}`}
+                >
+                  <img
+                    src={image}
+                    alt={propertyName}
+                    className="w-full h-full object-cover rounded-lg"
+                  />
+                  <div className="absolute inset-0 bg-black/40 opacity-0 rounded-lg group-hover:opacity-100 transition-opacity duration-500 flex flex-col items-center justify-center text-white text-center p-4">
+                    <h2 className="text-lg font-semibold">{propertyName}</h2>
+                    <p className="text-base">{location}</p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>  
         </div>
-      </div>
+      </div> */}
     </section>
   );
+
+  
+
 };

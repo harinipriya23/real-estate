@@ -3,20 +3,20 @@ import "aos/dist/aos.css";
 import { Hero } from "./pages/Hero";
 import { FAQs } from "./pages/FAQs";
 import { Footer } from "./pages/Footer";
-import { useContext, useEffect } from "react";
+import { useEffect } from "react";
 import { Experience } from "./pages/Experience";
 import { Advantages } from "./pages/Advantages";
 import { StartJourney } from "./pages/StartJourney";
 import { ExploreProperty } from "./pages/ExploreProperty";
-import { PropertyContext } from "./context/PropertyContext";
 import { AdvancedProperties } from "./pages/AdvancedProperties";
+import { usePropertyContext } from "./context/PropertyContext";
 
 function App() {
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
   }, []);
 
-  const { loading } = useContext(PropertyContext);
+  const { loading } = usePropertyContext();
 
   if (loading) <p>LOADING...</p>;
   return (
@@ -25,7 +25,7 @@ function App() {
         <main>
           <Hero />
           <AdvancedProperties />
-          {/* <ExploreProperty /> */}
+          <ExploreProperty />
           <Experience />
           <Advantages />
           <FAQs />

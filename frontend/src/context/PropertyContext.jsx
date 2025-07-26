@@ -1,19 +1,22 @@
 import axios from "axios";
 import { propertyData } from "./propertyData";
-import { createContext, useState, useEffect } from "react";
+import { initalState,filterReducer } from "../filter/FiltersFunctions";
+import { createContext, useState, useEffect, useReducer, useContext } from "react";
 
 // create context
-export const PropertyContext = createContext();
+const PropertyContext = createContext();
 
 // create provider
 export const PropertyProvider = ({ children }) => {
+
+  const [filterState, filterDispatch] = useReducer(filterReducer,initalState)
   const [properties, setProperties] = useState([]);
   const [loading, setLoading] = useState(true);
 
   const fetchProperties = async () => {
     const url = "https://real-estate-4ama.onrender.com/api/propertyType";
-
     try {
+      console.log("loading")
       const response = await axios.get(url);
       console.log(response.data);
       setProperties(response.data);
@@ -29,8 +32,14 @@ export const PropertyProvider = ({ children }) => {
   }, []);
 
   return (
-    <PropertyContext.Provider value={{ properties, loading, propertyData }}>
+    <PropertyContext.Provider value={{
+      properties, loading, propertyData,
+      filterState, filterDispatch
+    }}>
       {children}
     </PropertyContext.Provider>
   );
 };
+
+// custom hook
+export const usePropertyContext = () => useContext(PropertyContext);

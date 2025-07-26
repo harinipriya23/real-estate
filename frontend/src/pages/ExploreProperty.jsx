@@ -1,9 +1,8 @@
-import { useContext } from "react";
 import { BsArrowUpRightCircle } from "react-icons/bs";
-import { PropertyContext } from "../context/PropertyContext";
+import {usePropertyContext } from "../context/PropertyContext";
 
 export const ExploreProperty = ({ setSelectedProperty, selectedProperty }) => {
-  const { loading, propertyData, properties } = useContext(PropertyContext);
+  const { loading, propertyData, properties } = usePropertyContext();
 
   if (loading) return <p>Loading properties...</p>;
 
