@@ -12,7 +12,7 @@
       "description": "A peaceful 3 BHK beachside resort perfect for weekend getaways. Managed by the owner with care, it's located in a serene environment with coconut trees and sea breeze.",
       "price": "1500000",
       "areaSqFt": 3200,
-      "status": "Available",
+      "status": "Buy",
       "owner": {
         "name": "Mr. Raman",
         "contact": "9876543210"
@@ -43,7 +43,7 @@
       "description": "Modern 2 BHK apartment in the heart of Bangalore. Ideal for working professionals and small families, close to IT hubs and shopping streets.",
       "price": "8500000",
       "areaSqFt": 2000,
-      "status": "Sold",
+      "status": "Rent",
       "owner": {
         "name": "Mrs. Anitha",
         "contact": "9088776655"
@@ -74,7 +74,7 @@
       "description": "Spacious 4 BHK luxury villa with landscaped garden. Owner-maintained and ready to move in. Quiet gated community ideal for families.",
       "price": "2300000",
       "areaSqFt": 3200,
-      "status": "Available",
+      "status": "Buy",
       "owner": {
         "name": "Mr. Kishore",
         "contact": "9999911111"
@@ -105,7 +105,7 @@
       "description": "Compact and trendy studio apartment overlooking the sea. Ideal for singles or investment property. Fully furnished with aesthetic interiors.",
       "price": "6500000",
       "areaSqFt": 1100,
-      "status": "Rented",
+      "status": "Rent",
       "owner": {
         "name": "Mr. Dinesh",
         "contact": "8877665544"
@@ -133,10 +133,10 @@
       "street": "Amer Road",
       "location": "Jaipur, Rajasthan",
       "image": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bHV4dXJ5JTIwdmlsbGF8ZW58MHx8MHx8fDA%3D",
-      "description": "A majestic 5 BHK haveli with antique interiors and Rajasthani architecture. Owned and maintained by the royal lineage. Available for sale or boutique hotel setup.",
+      "description": "A majestic 5 BHK haveli with antique interiors and Rajasthani architecture. Owned and maintained by the royal lineage. Buy for sale or boutique hotel setup.",
       "price": "4000000",
       "areaSqFt": 9000,
-      "status": "Under Construction",
+      "status": "Rent",
       "owner": {
         "name": "Rajendra Singh",
         "contact": "9822223344"
@@ -167,7 +167,7 @@
       "description": "A peaceful retreat perfect for weekend getaways. Close to the beach with modern amenities.",
       "price": "12000000",
       "areaSqFt": 3200,
-      "status": "Available",
+      "status": "Buy",
       "owner": {
         "name": "Srinivas R.",
         "contact": "9876532190"
@@ -198,7 +198,7 @@
       "description": "Modern 2BHK apartment near tech parks and metro. Great for working professionals.",
       "price": "8800000",
       "areaSqFt": 1100,
-      "status": "Rented",
+      "status": "Rent",
       "owner": {
         "name": "Ananya Iyer",
         "contact": "9988776655"
@@ -229,7 +229,7 @@
       "description": "Spacious villa with lush garden and spacious rooms. Great for large families.",
       "price": "20500000",
       "areaSqFt": 3500,
-      "status": "Available",
+      "status": "Buy",
       "owner": {
         "name": "Rajiv Nanda",
         "contact": "9123456780"
@@ -260,7 +260,7 @@
       "description": "Cozy studio with sea view. Ideal for singles or investment buyers.",
       "price": "6200000",
       "areaSqFt": 580,
-      "status": "Sold",
+      "status": "Rent",
       "owner": {
         "name": "Sneha Rao",
         "contact": "9876075432"
@@ -291,7 +291,7 @@
       "description": "Traditional haveli with antique charm. Suitable for boutique hotel setup.",
       "price": "28000000",
       "areaSqFt": 4000,
-      "status": "Available",
+      "status": "Buy",
       "owner": {
         "name": "Rajesh Singh",
         "contact": "7001234567"
@@ -322,7 +322,7 @@
       "description": "Row house in peaceful gated colony with backwater view.",
       "price": "11000000",
       "areaSqFt": 2200,
-      "status": "Available",
+      "status": "Buy",
       "owner": {
         "name": "Maya Joseph",
         "contact": "9090908080"
@@ -353,7 +353,7 @@
       "description": "Top-floor penthouse with skyline view and huge balcony.",
       "price": "389000000",
       "areaSqFt": 7750,
-      "status": "Rented",
+      "status": "Rent",
       "owner": {
         "name": "Arnab Das",
         "contact": "9911773366"
@@ -384,7 +384,7 @@
       "description": "Elegant duplex with stylish interiors and good locality.",
       "price": "13000000",
       "areaSqFt": 2000,
-      "status": "Available",
+      "status": "Buy",
       "owner": {
         "name": "Aditya Mehta",
         "contact": "8888445566"
@@ -415,7 +415,7 @@
       "description": "Farmhouse with open green space and peaceful surroundings.",
       "price": "21000000",
       "areaSqFt": 3900,
-      "status": "Available",
+      "status": "Buy",
       "owner": {
         "name": "Dharmesh Patel",
         "contact": "7007001234"
@@ -446,7 +446,7 @@
       "description": "Residential plot in prime location, ready for construction.",
       "price": "9500000",
       "areaSqFt": 1800,
-      "status": "Available",
+      "status": "Buy",
       "owner": {
         "name": "Kiran Bhatia",
         "contact": "8765432109"
@@ -477,7 +477,7 @@
       "description": "Peaceful gated resort with gardens and amenities, perfect for weekend staycations.",
       "price": "11000000",
       "areaSqFt": 3000,
-      "status": "Available",
+      "status": "Buy",
       "owner": {
         "name": "Lakshmi Murthy",
         "contact": "9898999988"
@@ -508,7 +508,7 @@
       "description": "Well-connected 2BHK with nearbyLandmarks metro access and 24/7 security.",
       "price": "9100000",
       "areaSqFt": 980,
-      "status": "Rented",
+      "status": "Rent",
       "owner": {
         "name": "Nikita Shah",
         "contact": "9123451123"
@@ -539,7 +539,7 @@
       "description": "Spacious independent villa with modern interiors and lush lawn.",
       "price": "24500000",
       "areaSqFt": 4100,
-      "status": "Available",
+      "status": "Buy",
       "owner": {
         "name": "Syed Zafar",
         "contact": "9876543210"
@@ -570,7 +570,7 @@
       "description": "Compact and modern studio apartment in a prime neighborhood.",
       "price": "5800000",
       "areaSqFt": 560,
-      "status": "Sold",
+      "status": "Rent",
       "owner": {
         "name": "Harini V.",
         "contact": "9090907070"
@@ -601,7 +601,7 @@
       "description": "Spacious 5BHK haveli-style home with antique wooden work and cultural charm.",
       "price": "302000000",
       "areaSqFt": 6500,
-      "status": "Available",
+      "status": "Buy",
       "owner": {
         "name": "Rajendra Yadav",
         "contact": "7008006001"
@@ -632,7 +632,7 @@
       "description": "Modern row house with parking space and green backyard.",
       "price": "13500000",
       "areaSqFt": 2400,
-      "status": "Available",
+      "status": "Buy",
       "owner": {
         "name": "Dinesh Menon",
         "contact": "9011122233"
@@ -663,7 +663,7 @@
       "description": "High-rise penthouse with stunning views and premium furnishing.",
       "price": "21000000",
       "areaSqFt": 3200,
-      "status": "Available",
+      "status": "Buy",
       "owner": {
         "name": "Rohit Sen",
         "contact": "9333445566"
@@ -694,7 +694,7 @@
       "description": "Stylish duplex apartment with large windows and ample light.",
       "price": "15500000",
       "areaSqFt": 2300,
-      "status": "Available",
+      "status": "Buy",
       "owner": {
         "name": "Vikas Kale",
         "contact": "9944003322"
@@ -725,7 +725,7 @@
       "description": "Farmhouse with swimming pool and backyard farm area.",
       "price": "260500000",
       "areaSqFt": 6100,
-      "status": "Under Construction",
+      "status": "Rent",
       "owner": {
         "name": "Dhaval Joshi",
         "contact": "7788996600"
@@ -756,7 +756,7 @@
       "description": "Clear title plot ready for independent house construction.",
       "price": "8300000",
       "areaSqFt": 1600,
-      "status": "Available",
+      "status": "Buy",
       "owner": {
         "name": "Aarti Mehra",
         "contact": "9898089898"
@@ -793,7 +793,7 @@
         "Terrace",
         "Security"
       ],
-      "status": "Available",
+      "status": "Buy",
       "owner": {
         "name": "Mr. Ramesh Narayanan",
         "contact": "+91 9876543101"
@@ -824,7 +824,7 @@
         "Security",
         "Clubhouse"
       ],
-      "status": "Rented",
+      "status": "Rent",
       "owner": {
         "name": "Ms. Anita Sharma",
         "contact": "+91 9876543102"
@@ -855,7 +855,7 @@
         "Terrace",
         "Private Parking"
       ],
-      "status": "Available",
+      "status": "Buy",
       "owner": {
         "name": "Mr. Harsha Vardhan",
         "contact": "+91 9876543103"
@@ -886,7 +886,7 @@
         "Balcony",
         "Security"
       ],
-      "status": "Rented",
+      "status": "Rent",
       "owner": {
         "name": "Mr. Vinay Kulkarni",
         "contact": "+91 9876543104"
@@ -917,7 +917,7 @@
         "Terrace",
         "Private Garden"
       ],
-      "status": "Sold",
+      "status": "Rent",
       "owner": {
         "name": "Mrs. Sunita Singh",
         "contact": "+91 9876543105"
@@ -948,7 +948,7 @@
         "Clubhouse",
         "Security"
       ],
-      "status": "Available",
+      "status": "Buy",
       "owner": {
         "name": "Mr. Karthik Raj",
         "contact": "+91 9876543106"
@@ -979,7 +979,7 @@
         "Gym",
         "Private Pool"
       ],
-      "status": "Available",
+      "status": "Buy",
       "owner": {
         "name": "Mrs. Priya Dutta",
         "contact": "+91 9876543107"
@@ -1010,7 +1010,7 @@
         "Clubhouse",
         "WiFi"
       ],
-      "status": "Under Construction",
+      "status": "Rent",
       "owner": {
         "name": "Mr. Suresh Patil",
         "contact": "+91 9876543108"
@@ -1041,7 +1041,7 @@
         "Servant Room",
         "Garden"
       ],
-      "status": "Available",
+      "status": "Buy",
       "owner": {
         "name": "Mr. Jignesh Shah",
         "contact": "+91 9876543109"
@@ -1072,7 +1072,7 @@
         "Drainage",
         "Park Nearby"
       ],
-      "status": "Available",
+      "status": "Buy",
       "owner": {
         "name": "Mr. Rakesh Mehra",
         "contact": "+91 9876543110"
@@ -1103,7 +1103,7 @@
         "Security",
         "Sea View"
       ],
-      "status": "Available",
+      "status": "Buy",
       "owner": {
         "name": "Mr. Rajan Iyer",
         "contact": "9876543210"
@@ -1133,7 +1133,7 @@
         "Parking",
         "Elevator"
       ],
-      "status": "Rented",
+      "status": "Rent",
       "owner": {
         "name": "Ms. Aarti Deshmukh",
         "contact": "9832123456"
@@ -1163,7 +1163,7 @@
         "Gym",
         "Parking"
       ],
-      "status": "Available",
+      "status": "Buy",
       "owner": {
         "name": "Mr. Karthik Srinivasan",
         "contact": "9845098765"
@@ -1193,7 +1193,7 @@
         "Security",
         "Lift"
       ],
-      "status": "Sold",
+      "status": "Rent",
       "owner": {
         "name": "Mr. Amit Rathi",
         "contact": "9123456789"
@@ -1223,7 +1223,7 @@
         "Antique Fixtures",
         "Spacious Veranda"
       ],
-      "status": "Available",
+      "status": "Buy",
       "owner": {
         "name": "Mrs. Farzana Begum",
         "contact": "9001234567"
@@ -1253,7 +1253,7 @@
         "WiFi",
         "Garden"
       ],
-      "status": "Under Construction",
+      "status": "Rent",
       "owner": {
         "name": "Mr. Manpreet Singh",
         "contact": "9811122334"
@@ -1283,7 +1283,7 @@
         "Security",
         "Private Pool"
       ],
-      "status": "Available",
+      "status": "Buy",
       "owner": {
         "name": "Ms. Shweta Kapoor",
         "contact": "9898989898"
@@ -1313,7 +1313,7 @@
         "Clubhouse",
         "Lift"
       ],
-      "status": "Rented",
+      "status": "Rent",
       "owner": {
         "name": "Mr. Raghav Bhat",
         "contact": "9900099000"
@@ -1343,7 +1343,7 @@
         "Swimming Pool",
         "WiFi"
       ],
-      "status": "Available",
+      "status": "Buy",
       "owner": {
         "name": "Mr. Hardik Patel",
         "contact": "9822334455"
@@ -1373,7 +1373,7 @@
         "Park Nearby",
         "Water Line"
       ],
-      "status": "Available",
+      "status": "Buy",
       "owner": {
         "name": "Mrs. Neelam Verma",
         "contact": "9700112233"
@@ -1403,7 +1403,7 @@
         "Garden",
         "Terrace"
       ],
-      "status": "Available",
+      "status": "Buy",
       "owner": {
         "name": "Mr. Suresh Nayak",
         "contact": "9876523450"
@@ -1433,7 +1433,7 @@
         "Parking",
         "Power Backup"
       ],
-      "status": "Rented",
+      "status": "Rent",
       "owner": {
         "name": "Mrs. Kavya Ramesh",
         "contact": "9845012345"
@@ -1464,7 +1464,7 @@
         "Private Parking",
         "Garden"
       ],
-      "status": "Sold",
+      "status": "Rent",
       "owner": {
         "name": "Mr. Shaji Mathew",
         "contact": "9638527410"
@@ -1495,7 +1495,7 @@
         "Swimming Pool",
         "Fruit Trees"
       ],
-      "status": "Available",
+      "status": "Buy",
       "owner": {
         "name": "Mr. Anand Kumar",
         "contact": "9988776655"
@@ -1525,7 +1525,7 @@
         "Park Nearby",
         "Drainage"
       ],
-      "status": "Under Construction",
+      "status": "Rent",
       "owner": {
         "name": "Mrs. Lakshmi Natarajan",
         "contact": "9000123456"

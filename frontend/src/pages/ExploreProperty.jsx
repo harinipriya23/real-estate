@@ -6,10 +6,10 @@ export const ExploreProperty = ({ setSelectedProperty, selectedProperty }) => {
 
   if (loading) return <p>Loading properties...</p>;
 
-  const filteredProperties = selectedProperty
-    ? properties.filter((item) => item.type == selectedProperty)
-    : properties;
-  console.log(filteredProperties);
+  // const filteredProperties = selectedProperty
+  //   ? properties.filter((item) => item.type == selectedProperty)
+  //   : properties;
+  // console.log(filteredProperties);
 
   return (
     <section
@@ -60,9 +60,9 @@ export const ExploreProperty = ({ setSelectedProperty, selectedProperty }) => {
           Premium properties in prime locations with every facility you need
         </p>
       </div>
-      {filteredProperties.map((item) => (
+      {/* {filteredProperties.map((item) => (
         <div key={item.id}>{item.propertyName}</div>
-      ))}
+      ))} */}
     </section>
   );
 };

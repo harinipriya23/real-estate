@@ -10,13 +10,15 @@ export const AdvancedProperties = () => {
   const filteredProperties = properties.filter((item) => {
     const { purpose, location, priceRange } = filterState ;
     
-    const matchedPurpose = item.purpose == purpose;
-    const matchedLocation = !location || item.location.toLowerCase().includes(location.toLowerCase())
-    const matchedMinPrice = !priceRange.min || item.price >= priceRange.min
-    const matchedMaxPrice = !priceRange.max || item.price <= priceRange.max
-
-    
-    return matchedPurpose && matchedLocation && matchedMaxPrice && matchedMinPrice
+    const matchedPurpose = item.status == purpose;
+    // const matchedLocation = !location || item.location.toLowerCase().includes(location.toLowerCase())
+    const matchedMinPrice = !priceRange.min || Number(item.price) >= priceRange.min
+    const matchedMaxPrice = !priceRange.max || Number(item.price) <= priceRange.max
+    const hi = properties.map((item) => {
+ if(item.status == "Rent") item.propertyName
+})
+    console.log(hi)
+    return matchedPurpose && matchedMaxPrice && matchedMinPrice
   })
   console.log(filterState)
   console.log("filterd : " + filteredProperties)
@@ -87,6 +89,9 @@ export const AdvancedProperties = () => {
             </button>
           </div>
         </div>
+        {filteredProperties.map((item) => (
+          <div>{ item.type}</div>
+        ))}
       </div>
       {/* <div className="px-4 my-2">
         <p className="font-semibold text-lg font-poppins ">
