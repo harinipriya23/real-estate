@@ -12,16 +12,22 @@ export const AdvancedProperties = () => {
     
     const matchedPurpose = item.status == purpose;
     // const matchedLocation = !location || item.location.toLowerCase().includes(location.toLowerCase())
-    const matchedMinPrice = !priceRange.min || Number(item.price) >= priceRange.min
-    const matchedMaxPrice = !priceRange.max || Number(item.price) <= priceRange.max
-    const hi = properties.map((item) => {
- if(item.status == "Rent") item.propertyName
-})
-    console.log(hi)
+    const matchedMinPrice = priceRange.min == null || Number(item.price) >= priceRange.min
+    const matchedMaxPrice = priceRange.max == null || Number(item.price) <= priceRange.max
+ 
+  console.log({
+    name: item.propertyName,
+    itemPrice: item.price,
+    min: priceRange.min,
+    max: priceRange.max,
+    matchedPurpose,
+    matchedMinPrice,
+    matchedMaxPrice,
+  });
     return matchedPurpose && matchedMaxPrice && matchedMinPrice
-  })
-  console.log(filterState)
-  console.log("filterd : " + filteredProperties)
+  })  
+    console.log(filterState)
+  console.log("filterd : ",filteredProperties)
   const priceRanges = [
     { label: "Any price", min: null, max: null },
     { label: "₹50L - ₹1Cr", min: 5000000, max: 10000000 },
