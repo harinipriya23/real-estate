@@ -4,30 +4,32 @@ import { MdKeyboardArrowDown, MdOutlineSearch } from "react-icons/md";
 import { usePropertyContext } from "../context/PropertyContext";
 
 export const AdvancedProperties = () => {
+  const { properties, filterState, filterDispatch } = usePropertyContext();
 
-  const { properties, filterState, filterDispatch } = usePropertyContext()
-  
   const filteredProperties = properties.filter((item) => {
-    const { purpose, location, priceRange } = filterState ;
-    
+    const { purpose, location, priceRange } = filterState;
+
     const matchedPurpose = item.status == purpose;
-    // const matchedLocation = !location || item.location.toLowerCase().includes(location.toLowerCase())
-    const matchedMinPrice = priceRange.min == null || Number(item.price) >= priceRange.min
-    const matchedMaxPrice = priceRange.max == null || Number(item.price) <= priceRange.max
- 
-  console.log({
-    name: item.propertyName,
-    itemPrice: item.price,
-    min: priceRange.min,
-    max: priceRange.max,
-    matchedPurpose,
-    matchedMinPrice,
-    matchedMaxPrice,
+    const matchedLocation = !location || item.location.toLowerCase().includes(location.toLowerCase())
+    const matchedMinPrice =
+      priceRange.min == null || item.price >= priceRange.min;
+    const matchedMaxPrice =
+      priceRange.max == null || item.price <= priceRange.max;
+
+    // console.log({
+    //   name: item.propertyName,
+    //   status:item.status,
+    //   itemPrice: item.price,
+    //       min: priceRange.min,
+    //   max: priceRange.max,
+    //   matchedPurpose,
+    //   matchedMinPrice,
+    //   matchedMaxPrice,
+    // });
+    return matchedPurpose && matchedLocation && matchedMaxPrice && matchedMinPrice;
   });
-    return matchedPurpose && matchedMaxPrice && matchedMinPrice
-  })  
-    console.log(filterState)
-  console.log("filterd : ",filteredProperties)
+  console.log(filterState);
+  console.log("filterd : ", filteredProperties);
   const priceRanges = [
     { label: "Any price", min: null, max: null },
     { label: "₹50L - ₹1Cr", min: 5000000, max: 10000000 },
@@ -39,7 +41,7 @@ export const AdvancedProperties = () => {
 
   const [isActionOpen, setIsActionOpen] = useState(false);
   const [isPriceRangeOpen, setIsPriceRangeOpen] = useState(false);
- 
+
   return (
     <section className="w-full py-4 lg:py-6 lg:px-4 bg-neutral-100 rounded-xl text-black dark:bg-neutral-900 dark:text-neutral-100">
       <div className="space-y-2">
@@ -58,25 +60,32 @@ export const AdvancedProperties = () => {
                 onClick={() => setIsActionOpen(!isActionOpen)}
                 className="flex justify-between items-center w-full px-4 py-2 bg-white rounded-md shadow-sm hover:bg-neutral-200"
               >
-               {filterState.purpose}
+                {filterState.purpose}
                 <MdKeyboardArrowDown className="ml-2 text-lg" />
               </button>
               {isActionOpen && (
-                <DropDown options={action} dispatchType="SET_PURPOSE" isObject={false} />
-                 )}
+                <DropDown
+                  options={action}
+                  dispatchType="SET_PURPOSE"
+                  isOpen={setIsActionOpen}
+                  isObject={false}
+                />
+              )}
             </div>
             <div className="w-1/2 sm:w-2/3">
               <button
                 onClick={() => setIsPriceRangeOpen(!isPriceRangeOpen)}
                 className="flex justify-between items-center w-full px-4 py-2  bg-white rounded-md shadow-sm hover:bg-neutral-200"
               >
-                {filterState.priceRange?.label}
+                {filterState.priceRange.label}
                 <MdKeyboardArrowDown className="ml-2 text-lg" />
               </button>
               {isPriceRangeOpen && (
                 <DropDown
-                  options={priceRanges} dispatchType="PRICE_RANGE" isObject={true}
-                 
+                  options={priceRanges}
+                  dispatchType="PRICE_RANGE"
+                  isOpen={setIsPriceRangeOpen}
+                  isObject={true}
                 />
               )}
             </div>{" "}
@@ -84,7 +93,10 @@ export const AdvancedProperties = () => {
           <div className="flex justify-between gap-4 items-center font-inter px-4 sm:px-0 my-2">
             {" "}
             <div className="relative w-2/3 flex items-center">
-              <input   onChange={(e) => filterDispatch({ type: "LOCATION", payload: e.target.value })}
+              <input
+                onChange={(e) =>
+                  filterDispatch({ type: "LOCATION", payload: e.target.value })
+                }
                 placeholder="Search location"
                 className=" w-full pl-8 py-2 bg-white rounded-md shadow-sm outline-none hover:bg-neutral-50 text-gray-700"
               />
@@ -96,7 +108,7 @@ export const AdvancedProperties = () => {
           </div>
         </div>
         {filteredProperties.map((item) => (
-          <div>{ item.type}</div>
+          <div key={item.id}>{item.propertyName}</div>
         ))}
       </div>
       {/* <div className="px-4 my-2">
@@ -156,7 +168,4 @@ export const AdvancedProperties = () => {
       </div> */}
     </section>
   );
-
-  
-
 };

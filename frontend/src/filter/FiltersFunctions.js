@@ -13,9 +13,7 @@ export const filterReducer = (state, action) => {
     case "PRICE_RANGE":
       return {
         ...state,
-        priceRange: action.payload.label,
-        minPrice: action.payload.min,
-        maxPrice: action.payload.max,
+        priceRange: action.payload,
       };
     case "LOCATION":
       return { ...state, location: action.payload };
