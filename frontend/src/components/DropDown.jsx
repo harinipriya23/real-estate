@@ -1,6 +1,6 @@
 import { usePropertyContext } from "../context/PropertyContext";
 
-export const DropDown = ({ options, dispatchType,isOpen, isObject }) => {
+export const DropDown = ({ options, onSelect,isOpen, isObject }) => {
   const { filterDispatch } = usePropertyContext();
 
     return (
@@ -10,11 +10,8 @@ export const DropDown = ({ options, dispatchType,isOpen, isObject }) => {
           key={index}
           value={item.label}
           onClick={() => {
-            console.log("selected " + item);
-            filterDispatch({
-              type: dispatchType,
-              payload: isObject ? item : item.label,
-            }); isOpen(false);
+            onSelect(isObject ? item : item.label);
+            isOpen(false);
           }}
           className="px-4 py-2 hover:bg-blue-200 cursor-pointer"
         >
