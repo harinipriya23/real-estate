@@ -13,6 +13,7 @@ import {PropertyDetails} from "./pages/PropertyDetails";
 import { ExploreProperty } from "./pages/ExploreProperty";
 import { AdvancedProperties } from "./pages/AdvancedProperties";
 import { usePropertyContext } from "./context/PropertyContext";
+import { SpecificPropertyType } from "./components/SpecificPropertyType";
 
 function App() {
   useEffect(() => {
@@ -41,6 +42,7 @@ function App() {
         }
       />
       <Route path="/property/:id" element={<PropertyDetails />} />
+      <Route path="/specific-type/:id" element={<SpecificPropertyType />} />
 
     </Routes>
   );

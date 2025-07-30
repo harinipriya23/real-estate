@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { DropDown } from "../components/DropDown";
 import { MdKeyboardArrowDown, MdOutlineSearch } from "react-icons/md";
-import { usePropertyContext } from "../context/PropertyContext";import { ExploreProperty } from "./ExploreProperty";
+import { usePropertyContext } from "../context/PropertyContext"; import { ExploreProperty } from "./ExploreProperty";
 import { PropertyLayout } from "../components/PropertyLayout";
+
 
 export const AdvancedProperties = () => {
 
@@ -22,10 +23,12 @@ export const AdvancedProperties = () => {
   const [tempPurpose, setTempPurpose] = useState('Buy');
   const [tempPriceRange, setTempPriceRange] = useState({ label: "Any price", min: null, max: null });
 
+
   const handleApplyFilters = () => {
     console.log("Applying filters with purpose: ", tempPurpose, " and price range: ", tempPriceRange);
     filterDispatch({ type: "SET_PURPOSE", payload: tempPurpose });
     filterDispatch({ type: "PRICE_RANGE", payload: tempPriceRange });
+
 
     console.log(filterState);
     console.log("filtered : ", filteredProperties);
@@ -36,8 +39,8 @@ export const AdvancedProperties = () => {
       <div className="space-y-2">
         <p
           data-aos="fade-in-up"
-          data-aos-duartion="200"
-          className="text-xl lg:text-3xl xl:text-4xl text-center font-bold font-poppins"
+          data-aos-duration="200"
+          className="text-xl lg:text-3xl xl:text-4xl text-center font-semibold font-poppins"
         >
           Explore our Properties
         </p>
@@ -49,7 +52,7 @@ export const AdvancedProperties = () => {
                 onClick={() => setIsPurposeOpen(!isPurposeOpen)}
                 className="flex justify-between items-center w-full px-4 py-2 bg-white rounded-md shadow-sm hover:bg-neutral-200"
               >
-                {filterState.purpose}
+                {tempPurpose}
                 <MdKeyboardArrowDown className="ml-2 text-lg" />
               </button>
               {isPurposeOpen && (
@@ -68,7 +71,7 @@ export const AdvancedProperties = () => {
                 onClick={() => setIsPriceRangeOpen(!isPriceRangeOpen)}
                 className="flex justify-between items-center w-full px-4 py-2  bg-white rounded-md shadow-sm hover:bg-neutral-200"
               >
-                {filterState.priceRange.label}
+                {tempPriceRange.label}
                 <MdKeyboardArrowDown className="ml-2 text-lg" />
               </button>
               {isPriceRangeOpen && (
@@ -81,10 +84,9 @@ export const AdvancedProperties = () => {
                   isObject={true}
                 />
               )}
-            </div>{" "}
+            </div>
           </div>
           <div className="flex justify-between gap-4 items-center font-inter px-4 sm:px-0 my-2">
-            {" "}
             <div className="relative w-2/3 flex items-center">
               <input
                 onChange={(e) =>
@@ -100,7 +102,7 @@ export const AdvancedProperties = () => {
             </button>
           </div>
         </div>
-        {filterState.propertyType != "" ? null : <PropertyLayout />}
+        <PropertyLayout property={filteredProperties} />
       </div>
     </section>
   );

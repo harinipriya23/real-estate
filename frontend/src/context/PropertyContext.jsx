@@ -1,6 +1,6 @@
 import axios from "axios";
 import { propertyData } from "./propertyData";
-import { initialState,filterReducer } from "../filter/FiltersFunctions";
+import { initialState, filterReducer } from "../reducerState/FilterState";
 import { createContext, useState, useEffect, useReducer, useContext } from "react";
 
 // create context
@@ -9,7 +9,7 @@ const PropertyContext = createContext();
 // create provider
 export const PropertyProvider = ({ children }) => {
 
-  const [filterState, filterDispatch] = useReducer(filterReducer,initialState)
+  const [filterState, filterDispatch] = useReducer(filterReducer, initialState)
   const [properties, setProperties] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -30,8 +30,9 @@ export const PropertyProvider = ({ children }) => {
   useEffect(() => {
     fetchProperties();
   }, []);
- 
-  const filteredProperties = properties.filter((item) => {
+
+  
+   const filteredProperties = properties.filter((item) => {
     const { purpose, location, priceRange } = filterState;
 
     const matchedPurpose = item.status == purpose;
@@ -40,15 +41,14 @@ export const PropertyProvider = ({ children }) => {
       priceRange.min == null || item.price >= priceRange.min;
     const matchedMaxPrice =
       priceRange.max == null || item.price <= priceRange.max;
-    const matchedPropertyType = !filterState.propertyType || item.type === filterState.propertyType;
 
-    return matchedPurpose && matchedLocation && matchedMaxPrice && matchedMinPrice && matchedPropertyType;
+    return matchedPurpose && matchedLocation && matchedMaxPrice && matchedMinPrice;
   });
 
   return (
     <PropertyContext.Provider value={{
       properties, loading, propertyData,
-      filterState, filterDispatch,filteredProperties
+      filterState, filterDispatch, filteredProperties,
     }}>
       {children}
     </PropertyContext.Provider>
