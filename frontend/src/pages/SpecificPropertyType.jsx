@@ -19,7 +19,7 @@ export const SpecificPropertyType = () => {
     return (
         <section className='h-full w-full p-4 bg-white dark:bg-black space-y-4'>
             {propertyHeader && (
-                <div className="relative w-full h-[300px] overflow-hidden rounded-xl shadow-lg">
+                <div data-aos="fade-in-up" data-aos-duration="500" className="relative w-full h-[300px] lg:h-[400px] overflow-hidden rounded-xl shadow-lg">
                     <MdArrowBackIosNew onClick={() => navigate(-1)} className="absolute top-4 left-4 text-2xl text-neutral-800 bg-white p-1 z-50 rounded-md cursor-pointer" />
                     <img
                         src={propertyHeader.img}

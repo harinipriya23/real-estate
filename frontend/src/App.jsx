@@ -7,6 +7,7 @@ import { Routes, Route } from "react-router-dom";
 import { PropertyDetails } from "./pages/PropertyDetails";
 import { usePropertyContext } from "./context/PropertyContext";
 import { SpecificPropertyType } from "./pages/SpecificPropertyType";
+import ScrollToTop from "./reusableComponents/ScrollToTop";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
 
   return (
     <>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/property/:id" element={<PropertyDetails />} />
