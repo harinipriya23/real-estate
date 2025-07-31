@@ -22,7 +22,7 @@ export const Navbar = () => {
       AOS.refresh();
     }, 200);
   };
-  return (
+  return (<div>
       <button
         onClick={toggleTheme}
         className="motion-scale-in-50 motion-duration-1500 hover:-motion-rotate-in-180 hover:motion-duration-500"
@@ -32,7 +32,7 @@ export const Navbar = () => {
         ) : (
           <IoSunny size={25} />
         )}{" "}
-      </button>
+      </button></div>
   );
 };
 export default Navbar;

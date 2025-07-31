@@ -5,8 +5,8 @@ import buildingImg1 from "../assets/property/building1.avif";
 import buildingImg2 from "../assets/property/building2.webp";
 
 import { useState, useEffect } from "react";
-import { CallButton } from "../reusableComponents/CallButton";
 import { PiBuildingApartmentFill } from "react-icons/pi";
+import { CallButton } from "../reusableComponents/CallButton";
 
 
 export const Hero = () => {
@@ -67,7 +67,7 @@ export const Hero = () => {
           className="h-full w-full object-cover rounded-lg shadow-sm motion-scale-in-90 motion-duration-1500" />
         <div data-aos="fade-in-up" data-aos-duration="500"
           className="absolute top-0 left-0 right-0 rounded-lg bg-black/30 h-full font-medium text-white z-10 px-4 py-10
-       flex items-start justify-evenly text-[10px] md:text-[14px] lg:text-[16px] motion-scale-in-90 motion-duration-1500">
+       flex items-start justify-evenly text-[11px] md:text-[14px] lg:text-[16px] motion-scale-in-90 motion-duration-1500">
           <p className="flex flex-col items-center whitespace-nowrap motion-preset-slide-up-md motion-duration-1500">
             7+ Years of Expertise<span>Thousands of happy moves</span>
           </p>
