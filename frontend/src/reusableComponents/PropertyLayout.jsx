@@ -1,5 +1,5 @@
-import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export const PropertyLayout = ({ property }) => {
 
@@ -24,11 +24,8 @@ export const PropertyLayout = ({ property }) => {
         <section className="grid grid-cols-2 gap-4 w-full p-4 lg:py-6 lg:px-4 bg-neutral-50 rounded-xl text-black dark:bg-neutral-900 dark:text-neutral-100">
             {paginatedProperties.map((item) => (
                 <div key={item.id} className="relative group overflow-hidden rounded-lg shadow-md bg-white dark:bg-neutral-800 transition-all duration-300">
-                    <img
-                        src={item.image}
-                        alt={item.propertyName}
-                        className="h-[180px] w-full object-cover group-hover:scale-110 transition-transform duration-300"
-                    />
+                    <img src={item.image} alt={item.propertyName}
+                        className="h-[180px] w-full object-cover group-hover:scale-110 transition-transform duration-300" />
                     <div className="p-3 font-inter">
                         <p className="font-semibold text-base h-12">{item.propertyName}</p>
                         <p className="text-sm text-gray-500 dark:text-gray-300 flex justify-between">{item.bhk} <span>{item.areaSqFt} sqft</span></p>

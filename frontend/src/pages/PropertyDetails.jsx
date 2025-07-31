@@ -17,7 +17,6 @@ export const PropertyDetails = () => {
             </section>
         );
     }
-
     return (
         <section className="h-full w-full p-4 bg-gradient-to-br from-neutral-200 to-white">
             <div className="w-full bg-white rounded-2xl shadow-lg p-6 md:p-10 font-inter">
@@ -32,37 +31,30 @@ export const PropertyDetails = () => {
                         {property.status === "Buy" ? "For Sale" : "For Rent"}
                     </div>
                 </div>
-
                 <h2 className="text-xl md:text-2xl mt-2 font-bold text-neutral-800 text-center">
                     {property.propertyName}
                 </h2>
-
                 <p className="font-normal text-justify text-sm my-2">{property.description}</p>
-
                 {/* Property Details Section */}
                 <div className="my-4">
                     <div className="font-semibold font-poppins text-lg flex items-center gap-4 mb-2">
                         <span>Property Details</span>
                         <div className="h-[2px] w-full bg-black" />
                     </div>
-
                     <div className="flex flex-wrap gap-2 font-semibold text-neutral-800 text-base">
                         <div>Property Name: <span className="font-normal">{property.propertyName}</span></div>
                         <div>Property Type: <span className="font-normal">{property.type}</span></div>
                         <div>Address: <span className="font-normal">{property.address}, {property.street} {property.location}</span></div>
-
                         <div className="grid grid-cols-2 w-full">
                             <div>BHK: <span className="font-normal">{property.bhk}</span></div>
                             <div>Price: <span className="font-normal">₹ {property.price.toLocaleString()}</span></div>
                         </div>
-
                         <div className="grid grid-cols-2 w-full">
                             <div>Area: <span className="font-normal">{property.areaSqFt} sqft</span></div>
                             <div>Facing: <span className="font-normal">{property.facing}</span></div>
                         </div>
                     </div>
                 </div>
-
                 {/* Contact Details Section */}
                 <div className="my-4">
                     <div className="font-semibold font-poppins text-lg flex items-center gap-4 mb-2">
@@ -74,14 +66,12 @@ export const PropertyDetails = () => {
                         <div>Phone: <span className="font-normal">+91 {property.owner.contact}</span></div>
                     </div>
                 </div>
-
                 {/* Surroundings Section */}
                 <div className="my-4">
                     <div className="font-semibold font-poppins text-lg flex items-center gap-4 mb-2">
                         <span>Surroundings</span>
                         <div className="h-[2px] w-full bg-black" />
                     </div>
-
                     <div className="flex flex-col font-semibold text-neutral-800 text-base">
                         <div>
                             Landmarks:

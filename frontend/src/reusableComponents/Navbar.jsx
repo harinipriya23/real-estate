@@ -1,6 +1,6 @@
 import AOS from "aos";
-import { useState, useEffect } from "react";
 import { IoSunny } from "react-icons/io5";
+import { useState, useEffect } from "react";
 import { BsMoonStarsFill } from "react-icons/bs";
 
 export const Navbar = () => {
@@ -23,7 +23,6 @@ export const Navbar = () => {
     }, 200);
   };
   return (
-    <div>
       <button
         onClick={toggleTheme}
         className="motion-scale-in-50 motion-duration-1500 hover:-motion-rotate-in-180 hover:motion-duration-500"
@@ -34,6 +33,6 @@ export const Navbar = () => {
           <IoSunny size={25} />
         )}{" "}
       </button>
-    </div>
   );
 };
+export default Navbar;

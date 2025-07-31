@@ -1,19 +1,12 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { Home } from "./pages/Home";
 import { Routes, Route } from "react-router-dom";
-
-import { Hero } from "./pages/Hero";
-import { FAQs } from "./pages/FAQs";
-import { Footer } from "./pages/Footer";
-import { Experience } from "./pages/Experience";
-import { Advantages } from "./pages/Advantages";
-import { StartJourney } from "./pages/StartJourney";
-import {PropertyDetails} from "./pages/PropertyDetails";
-import { ExploreProperty } from "./pages/ExploreProperty";
-import { AdvancedProperties } from "./pages/AdvancedProperties";
+import { PropertyDetails } from "./pages/PropertyDetails";
 import { usePropertyContext } from "./context/PropertyContext";
-import { SpecificPropertyType } from "./components/SpecificPropertyType";
+import { SpecificPropertyType } from "./pages/SpecificPropertyType";
+
 
 function App() {
   useEffect(() => {
@@ -26,24 +19,9 @@ function App() {
 
   return (
     <Routes>
-      <Route
-        path="/"
-        element={
-          <main>
-            <Hero />
-            <AdvancedProperties />
-            <ExploreProperty />
-            <Experience />
-            <Advantages />
-            <FAQs />
-            <StartJourney />
-            <Footer />
-          </main>
-        }
-      />
+      <Route path="/" element={<Home />} />
       <Route path="/property/:id" element={<PropertyDetails />} />
-      <Route path="/specific-type/:id" element={<SpecificPropertyType />} />
-
+      <Route path="/specific-type/:type" element={<SpecificPropertyType />} />
     </Routes>
   );
 }

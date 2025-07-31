@@ -4,7 +4,8 @@ export const propertyData = [
     type: "Resort",
     img: "https://images.unsplash.com/photo-1606402179428-a57976d71fa4?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     link: "Resort",
-    span: "col-start-1 row-start-1  md:col-span-3 md:col-start-1 lg:col-span-3 lg:col-start-1 ",
+    span: "col-start-1 row-start-1  md:col-span-3 md:col-start-1 lg:col-span-3 lg:col-start-1",
+    description: "A luxurious escape surrounded by nature, perfect for relaxing weekends, spa indulgence, and five-star service under open skies."
   },
   {
     id: 1,
@@ -12,13 +13,15 @@ export const propertyData = [
     img: "https://images.unsplash.com/photo-1608974007646-4343e2b83b77?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTF8fGFwYXJ0bWVudCUyMGJ1aWxkaW5nfGVufDB8fDB8fHww",
     link: "Apartment",
     span: "md:col-span-3 lg:col-span-3",
+    description: "Modern city living with high-end interiors, smart home features, and panoramic skyline views for a truly elevated lifestyle."
   },
   {
     id: 2,
     type: "Duplex",
     img: "https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg",
     link: "Duplex",
-    span: "md:col-span-3 lg:col-start-1 lg:col-span-2 ",
+    span: "md:col-span-3 lg:col-start-1 lg:col-span-2",
+    description: "A two-level luxury residence offering spacious living areas, private balconies, and the comfort of an independent villa within a secure community."
   },
   {
     id: 3,
@@ -26,6 +29,7 @@ export const propertyData = [
     img: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fGx1eHVyeSUyMHZpbGxhfGVufDB8fDB8fHww",
     link: "Villa",
     span: "col-span-2 md:col-span-5 lg:col-span-3 lg:col-start-3",
+    description: "An opulent private retreat with landscaped gardens, infinity pool, and bespoke interiors — designed for those who desire grandeur and privacy."
   },
   {
     id: 4,
@@ -33,6 +37,7 @@ export const propertyData = [
     img: "https://images.unsplash.com/photo-1651733834052-71680694092a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTU3fHxyb3clMjBob3VzZXxlbnwwfHwwfHx8MA%3D%3D",
     link: "Row House",
     span: "md:col-span-3 lg:col-span-2",
+    description: "A charming blend of classic architecture and modern finishes, these upscale homes offer neighborhood warmth with individual luxury."
   },
   {
     id: 5,
@@ -40,6 +45,7 @@ export const propertyData = [
     img: "https://images.unsplash.com/photo-1705825533722-e562d3ee873c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fHRvd24lMjBob3VzZXxlbnwwfHwwfHx8MA%3D%3D",
     link: "Penthouse",
     span: "md:col-span-3 md:col-start-6 lg:col-span-3",
+    description: "Soaring above the city, this exclusive penthouse offers unmatched luxury with floor-to-ceiling glass walls, rooftop deck, and private elevator access."
   },
   {
     id: 6,
@@ -47,6 +53,7 @@ export const propertyData = [
     img: "https://images.unsplash.com/photo-1674306147096-d4c052b9816d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjN8fHJlc29ydHxlbnwwfHwwfHx8MA%3D%3D",
     link: "Farmhouse",
     span: "col-start-2 md:col-span-3 lg:col-span-2",
+    description: "A tranquil countryside haven with organic gardens, rustic-chic décor, and ample space for gatherings, perfect for luxury getaways or weekend homes."
   },
   {
     id: 7,
@@ -54,6 +61,7 @@ export const propertyData = [
     img: "https://images.pexels.com/photos/32798469/pexels-photo-32798469.jpeg",
     link: "Plot",
     span: " hidden lg:block lg:col-span-3 lg:col-start-7",
+    description: "A prime parcel of land ideal for building your dream estate — customizable, spacious, and located in elite residential zones."
   },
   {
     id: 8,
@@ -61,5 +69,6 @@ export const propertyData = [
     img: "https://images.unsplash.com/photo-1709145883296-4443310e3be0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjZ8fGFwYXJ0bWVudCUyMGJ1aWxkaW5nfGVufDB8fDB8fHww",
     link: "Studio Apartment",
     span: " hidden lg:block lg:col-span-3  lg:col-start-10",
+    description: "A sleek and sophisticated compact space designed for modern city dwellers — luxury finishes, smart layout, and unbeatable location."
   },
 ];
