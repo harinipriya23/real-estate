@@ -2,6 +2,17 @@
 
 The Luxury Real Estate Application is an advanced and interactive web application developed with Vite, Tailwind CSS, and React. It allows users to browse luxury properties for rent or sale, with powerful filters for property type, price, and location. The project includes animated user interface elements,  dynamic routing using react-router-dom, and effective state management using hooks such as useReducer, useState, useEffect, and React Context to maintain the global state running through the components. The application is ideal for highlighting frontend development skills in a professional and sustainable way as it accurately resemble a real-world elite real estate platform.
 
+## 🚀 Live Demo
+
+[Click here to view the live site](https://harinipriya23.github.io/real-estate)
+
+
+## 🚀 Live Demo
+
+🔗 [https://harinipriya23.github.io/real-estate](https://harinipriya23.github.io/real-estate)
+
+
+[![Live Demo](https://img.shields.io/badge/Live-Demo-blue?style=for-the-badge&logo=github)](https://harinipriya23.github.io/real-estate)
 
 ![Demo GIF](./demo.gif)
 
