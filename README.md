@@ -71,5 +71,27 @@ Explore the deployed application here:
 - 📬 Integrated contact section with filter support  
 - 🌐 Deployed on GitHub Pages
 
+## Project Structure 
+
+real-estate/
+├── backend/ # Node backend
+| ├── db.json
+│ ├── server.js
+├── frontend/ # React frontend
+| └── public/
+│ └── src/
+│ ├── assets/ 
+│ ├── context/ 
+│ ├── homeComponents/ 
+│ ├── layoutData/ 
+│ ├── pages/ # Main pages
+│ ├── reducer/
+| └── resableComponents/
+├── App.jsx
+├── index.css
+├── main.jsx
+├── screenshots/
+└── README.md
+
 
 
