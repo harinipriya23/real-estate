@@ -29,7 +29,6 @@ Explore the deployed application here:
 - **Animations**: AOS (Animate On Scroll), Tailwind CSS Motion Plugins
 - **Icons**: React Icons
 - **Backend**: JSON Server (Mock API)
-- **Language**: JavaScript
 
 ## 🛠️ Tech Stack
 
@@ -88,11 +87,9 @@ real-estate/
 │       ├── layoutData/  
 │       ├── pages/            # Main pages  
 │       ├── reducer/  
-│       └── reusableComponents/
-|
+│       └── reusableComponents/  
 ├── App.jsx  
 ├── index.css  
 ├── main.jsx  
 ├── screenshots/             # Project screenshots  
 └── README.md  
-
