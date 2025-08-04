@@ -1,4 +1,4 @@
-# 🏠 Real Estate Explorer ![React](https://img.shields.io/badge/React-18-blue) ![Tailwind](https://img.shields.io/badge/TailwindCSS-3.0-blue)
+# 🏠 Real Estate Explorer ![React](https://img.shields.io/badge/React-18-red) ![Tailwind](https://img.shields.io/badge/TailwindCSS-3.0-blue)
 
 > Find your perfect home with a clean UI, dynamic filters, and instant navigation!
 
