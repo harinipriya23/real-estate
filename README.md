@@ -10,16 +10,16 @@ Explore the deployed application here:
 ## ✨ Explore the Experience
 
 ### 🏠 Home Page  
-![Home Page](public/home.png)
+![Home Page](screenshots/home.png)
 
 ### 🏘️ All Properties Page  
-![All Properties](public/properties.png)
+![All Properties](screenshots/properties.png)
 
 ### 🏷️ Property Type Page  
-![Property Type](public/property-type.png)
+![Property Type](screenshots/property-type.png)
 
 ### 🏡 Specific Property Page  
-![Specific Property](public/specific-property.png)
+![Specific Property](screenshots/specific-property.png)
 
 
 ## 🔎 Features
