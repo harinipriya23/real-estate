@@ -1,42 +1,24 @@
-# Real Estate Explorer – React Project
+# 🏠 Real Estate Explorer ![React](https://img.shields.io/badge/React-18-blue) ![Tailwind](https://img.shields.io/badge/TailwindCSS-3.0-blue)
 
-## 🎯 Project Aim
-Create a property listing site where users can browse and filter properties, view detailed pages, and interact with various sections.
+> Find your perfect home with a clean UI, dynamic filters, and instant navigation!
 
----
+![Demo GIF](./demo.gif)
 
-## 🧱 Component Breakdown
+## 🔎 Features
+- 🔁 Auto changing banners
+- 🎛️ Live filtering system
+- 👀 Property hover preview + full details
+- 🧩 Reusable & maintainable code
+- 📱 Fully responsive design
 
-### Hero Section
-- Auto image change every 5 sec
-- Icons with animation
+## 🛠️ Tools Used
+- React
+- Tailwind
+- React Router DOM
+- JavaScript
 
-### Property Section
-- Property cards with BHK, sqft, price, and location
-- Filters: useReducer logic
-  - Buy / Rent
-  - Price sort
-  - Location search
-
-### Property Details
-- On hover: show description + view btn
-- On click: navigate to details
-  - Includes address, contact, amenities
-
-### Routing
-- React Router with `useParams`, `useNavigate`
-- Dynamic property details page
-
-## 💻 Reusable Components
-- Card
-- Filter
-- Header/Footer
-- FAQ Accordion
+## 📲 Demo
+[Live Demo →](https://your-demo-link.com)
 
 ---
-
-## 🚧 Future Improvements
-- Connect to backend API
-- Add authentication
-- Admin panel for listing management
 
