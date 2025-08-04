@@ -10,16 +10,16 @@ Explore the deployed application here:
 ## ✨ Explore the Experience
 
 ### 🏠 Home Page  
-![Home Page](screenshots/home.png)
+<img src="screenshots/home.png" width="700" alt="Home" />
 
 ### 🏘️ Properties Page  
-![Properties](screenshots/properties.png)
+<img src="screenshots/properties.png" width="700" alt="Properties" />
 
 ### 🏷️ Property Type Page  
-![Property Type](screenshots/property-type.png)
+<img src="screenshots/property-type.png" width="700" alt="Property Type" />
 
 ### 🏡 Specific Property Page  
-![Specific Property](screenshots/specific-property.png)
+<img src="screenshots/specific-property.png" width="700" alt="Specific Property" />
 
 ## 🛠️ Tech Stack
 
@@ -61,5 +61,67 @@ Explore the deployed application here:
 - 📬 Integrated contact section with filter support  
 - 🌐 Deployed on GitHub Pages
 
+## Project Structure 
 
+real-estate/  
+├── backend/                  # Node backend  
+│   ├── db.json  
+│   └── server.js  
+├── frontend/                 # React frontend  
+│   ├── public/  
+│   └── src/  
+│       ├── assets/  
+│       ├── context/  
+│       ├── homeComponents/  
+│       ├── layoutData/  
+│       ├── pages/            # Main pages  
+│       ├── reducer/  
+│       └── reusableComponents/  
+├── App.jsx  
+├── index.css  
+├── main.jsx  
+├── screenshots/             # Project screenshots  
+└── README.md  
 
+## ⚙️ Installation
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/harinipriya23/real-estate.git
+cd real-estate
+
+# 2. Install frontend dependencies
+cd frontend
+npm install
+
+# 3. Install backend dependencies
+cd backend
+npm install
+
+# 4. Start the backend server
+cd ../backend
+npm start
+
+# 5. Start the frontend development server
+cd ../frontend
+npm run dev
+
+# 6. Open the application in your browser
+# Visit: http://localhost:5173/real-estate
+```
+## 🔧 Future Enhancements
+
+- Integrate user authentication with Java (Spring Boot)
+- Use PostgreSQL for real-time, persistent data
+- Develop an admin panel to manage users and property listings
+- Optimize performance and loading speed
+- Improve SEO and accessibility
+- Add frontend and backend testing (unit/integration)
+- Deploy backend using cloud platforms (e.g., Render, Railway)
+
+## 📬 Contact
+
+For any queries or feedback, feel free to reach out:
+
+- **Email**: [harinipriyaarunjunaivel@gmail.com](mailto:harinipriyaarunjunaivel@gmail.com)  
+- **GitHub**: [https://github.com/harinipriya23](https://github.com/harinipriya23)
