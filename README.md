@@ -72,8 +72,6 @@ Explore the deployed application here:
 
 ## Project Structure 
 
-## 📁 Project Structure
-
 real-estate/  
 ├── backend/                  # Node backend  
 │   ├── db.json  
@@ -119,7 +117,7 @@ npm run dev
 
 # 6. Open the application in your browser
 # Visit: http://localhost:5173/real-estate
-
+```
 ## 🔧 Future Enhancements
 
 - Integrate user authentication with Java (Spring Boot)
