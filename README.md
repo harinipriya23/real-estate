@@ -10,18 +10,16 @@ Explore the deployed application here:
 ## ✨ Explore the Experience
 
 ### 🏠 Home Page  
-![Home Page](screenshots/home.png)
+<img src="screenshots/home.png" width="700" alt="Home" />
 
 ### 🏘️ Properties Page  
-![Properties](screenshots/properties.png)
-
-<img src="screenshots/properties.png" width="500" alt="Properties" />
+<img src="screenshots/properties.png" width="700" alt="Properties" />
 
 ### 🏷️ Property Type Page  
-![Property Type](screenshots/property-type.png)
+<img src="screenshots/property-type.png" width="700" alt="Property Type" />
 
 ### 🏡 Specific Property Page  
-![Specific Property](screenshots/specific-property.png)
+<img src="screenshots/specific-property.png" width="700" alt="Specific Property" />
 
 ## 🛠️ Tech Stack
 
