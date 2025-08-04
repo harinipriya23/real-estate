@@ -11,10 +11,16 @@ The Luxury Real Estate Application is an advanced and interactive web applicatio
 
 🔗 [https://harinipriya23.github.io/real-estate](https://harinipriya23.github.io/real-estate)
 
+## 🚀 Live Demo
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-blue?style=for-the-badge&logo=github)](https://harinipriya23.github.io/real-estate)
+👉 [**Check the live app here**](https://harinipriya23.github.io/real-estate)  
+_Deploy Link: `https://harinipriya23.github.io/real-estate`_
 
-![Demo GIF](./demo.gif)
+## 🔗 Live Site
+
+Explore the deployed application here:  
+🔗 **[https://harinipriya23.github.io/real-estate](https://harinipriya23.github.io/real-estate)**
+
 
 ## 🔎 Features
 - 🔁 Auto changing banners
