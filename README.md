@@ -89,6 +89,7 @@ real-estate/
 │       ├── pages/            # Main pages  
 │       ├── reducer/  
 │       └── reusableComponents/
+|
 ├── App.jsx  
 ├── index.css  
 ├── main.jsx  
