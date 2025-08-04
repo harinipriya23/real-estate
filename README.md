@@ -7,6 +7,7 @@ Explore the deployed application here:
 🔗 **[https://harinipriya23.github.io/real-estate](https://harinipriya23.github.io/real-estate)**
 
 
+
 ## 🔎 Features
 - 🔁 Auto changing banners
 - 🎛️ Live filtering system
