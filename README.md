@@ -15,6 +15,8 @@ Explore the deployed application here:
 ### 🏘️ Properties Page  
 ![Properties](screenshots/properties.png)
 
+<img src="screenshots/properties.png" width="500" alt="Properties" />
+
 ### 🏷️ Property Type Page  
 ![Property Type](screenshots/property-type.png)
 
