@@ -120,3 +120,19 @@ npm run dev
 # 6. Open the application in your browser
 # Visit: http://localhost:5173/real-estate
 
+## 🔧 Future Enhancements
+
+- Integrate user authentication with Java (Spring Boot)
+- Use PostgreSQL for real-time, persistent data
+- Develop an admin panel to manage users and property listings
+- Optimize performance and loading speed
+- Improve SEO and accessibility
+- Add frontend and backend testing (unit/integration)
+- Deploy backend using cloud platforms (e.g., Render, Railway)
+
+## 📬 Contact
+
+For any queries or feedback, feel free to reach out:
+
+- **Email**: [harinipriyaarunjunaivel@gmail.com](mailto:harinipriyaarunjunaivel@gmail.com)  
+- **GitHub**: [https://github.com/harinipriya23](https://github.com/harinipriya23)
