@@ -23,16 +23,6 @@ Explore the deployed application here:
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: React, Tailwind CSS
-- **Routing**: React Router DOM
-- **State Management**: React Context, useReducer, useState, useEffect
-- **Animations**: AOS (Animate On Scroll), Tailwind CSS Motion Plugins
-- **Icons**: React Icons
-- **Backend**: JSON Server (Mock API)
-- **Language**: JavaScript
-
-## 🛠️ Tech Stack
-
 ### 🎨 UI & Animations
 - **Styling**: Tailwind CSS  
 - **Motion & Effects**:  
