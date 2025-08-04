@@ -1,23 +1,42 @@
-# Real Estate Finder 🏠
+# Real Estate Explorer – React Project
 
-A responsive web app to explore, filter, and view properties for rent/sale.
+## 🎯 Project Aim
+Create a property listing site where users can browse and filter properties, view detailed pages, and interact with various sections.
 
-## 🔧 Tech Stack
-- React.js
-- Tailwind CSS
-- React Router
-- useReducer
-- JavaScript
+---
 
-## ✨ Features
-- Hero section with image animation
-- Property listing with filters (Buy/Rent, Price, Location, etc.)
-- Hover + click to view property details
-- Reusable components
-- Routing with parameters and navigation
-- FAQs, About section, Team, and Footer
+## 🧱 Component Breakdown
 
-## 🚀 Getting Started
-1. Clone the repo  
-```bash
-git clone https://github.com/yourusername/real-estate.git
+### Hero Section
+- Auto image change every 5 sec
+- Icons with animation
+
+### Property Section
+- Property cards with BHK, sqft, price, and location
+- Filters: useReducer logic
+  - Buy / Rent
+  - Price sort
+  - Location search
+
+### Property Details
+- On hover: show description + view btn
+- On click: navigate to details
+  - Includes address, contact, amenities
+
+### Routing
+- React Router with `useParams`, `useNavigate`
+- Dynamic property details page
+
+## 💻 Reusable Components
+- Card
+- Filter
+- Header/Footer
+- FAQ Accordion
+
+---
+
+## 🚧 Future Improvements
+- Connect to backend API
+- Add authentication
+- Admin panel for listing management
+
