@@ -12,8 +12,8 @@ Explore the deployed application here:
 ### 🏠 Home Page  
 ![Home Page](screenshots/home.png)
 
-### 🏘️ All Properties Page  
-![All Properties](screenshots/properties.png)
+### 🏘️ Properties Page  
+![Properties](screenshots/properties.png)
 
 ### 🏷️ Property Type Page  
 ![Property Type](screenshots/property-type.png)
@@ -21,22 +21,55 @@ Explore the deployed application here:
 ### 🏡 Specific Property Page  
 ![Specific Property](screenshots/specific-property.png)
 
+## 🛠️ Tech Stack
 
-## 🔎 Features
-- 🔁 Auto changing banners
-- 🎛️ Live filtering system
-- 👀 Property hover preview + full details
-- 🧩 Reusable & maintainable code
-- 📱 Fully responsive design
+- **Frontend**: React, Tailwind CSS
+- **Routing**: React Router DOM
+- **State Management**: React Context, useReducer, useState, useEffect
+- **Animations**: AOS (Animate On Scroll), Tailwind CSS Motion Plugins
+- **Icons**: React Icons
+- **Backend**: JSON Server (Mock API)
+- **Language**: JavaScript
 
-## 🛠️ Tools Used
-- React
-- Tailwind
-- React Router DOM
-- JavaScript
+## 🛠️ Tech Stack
 
-## 📲 Demo
-[Live Demo →](https://your-demo-link.com)
+### 🎨 UI & Animations
+- **Styling**: Tailwind CSS  
+- **Motion & Effects**:  
+  - Tailwind CSS Motion Plugins  
+  - AOS (Animate On Scroll)  
+- **UI Components**:  
+  - React Icons  
+  - React CountUp    
+  - React Fast Marquee  
+  - React Intersection Observer  
 
----
+### ⚙️ Code Logic & State Management
+- **Core**: React, JavaScript  
+- **Routing**: React Router DOM, useNavigate 
+- **State Management**:  
+  - React Context  
+  - useReducer  
+  - useState, useEffect 
+- **API Handling**: Axios  
+
+### 🚀 Deployment & Build Tools
+- **Development**: Vite  
+- **Mock Backend**: JSON Server  
+- **Deployment**: gh-pages (GitHub Pages)
+
+## 🎯 Key Features
+
+- 🔁 Reusable components for dropdowns, layout, and property types  
+- ⚙️ Instant filtering using `useReducer` for search and filters  
+- 🎨 Smooth UI animations with AOS and Tailwind Motion  
+- 🧭 Page navigation and back action via `useNavigate`  
+- 🧱 Modular layout with clean and maintainable code structure  
+- 💡 Context API and `useState` for efficient state management  
+- 🛣️ Client-side routing using `react-router-dom`  
+- 🖼️ Brand scrolling with Marquee and FAQ accordion section  
+- 📬 Integrated contact section with filter support  
+- 🌐 Deployed on GitHub Pages
+
+
 

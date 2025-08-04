@@ -62,7 +62,7 @@ export const PropertyDetails = () => {
                                 <span>Contact Details</span>
                                 <div className="h-[1px] bg-black dark:bg-neutral-300" />
                             </div>
-                            <div className="flex flex-col sm:flex-row sm:justify-between p-2 md:px-4  gap-2 font-semibold text-sm md:text-base ">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 justify-items-start p-2 md:px-4  gap-2 font-semibold text-sm md:text-base ">
                                 <div>Name: <span className="font-normal">{property.owner.name}</span></div>
                                 <div>Phone: <span className="font-normal">+91 {property.owner.contact}</span></div>
                             </div>
